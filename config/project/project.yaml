@@ -1,0 +1,17 @@
+dateModified: 1598209525
+email:
+  fromEmail: jonathan@elev8now.co.uk
+  fromName: Elev8
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: solo
+  live: true
+  name: Elev8
+  schemaVersion: 3.5.12
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
