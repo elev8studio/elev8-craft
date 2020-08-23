@@ -3,6 +3,9 @@
 .env.sh
 .env
 
+# CONFIG
+/config/project/
+
 # COMPOSER
 /vendor
 
