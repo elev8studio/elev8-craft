@@ -26,8 +26,14 @@ return [
         'securityKey' => App::env('SECURITY_KEY'),
 
         'aliases' => [
-            'baseUrl' => App::env('BASE_URL'),
-        ]
+            'webroot' => dirname(__DIR__) . '/web',
+            'web' => getenv('BASE_URL'),
+            'assetBasePath' => dirname(__DIR__) . '/web/assets',
+            'assetBaseUrl' => getenv('BASE_URL').'/web/assets',
+            'basePath' => dirname(__DIR__) . '/web',
+            'baseUrl' => getenv('BASE_URL'),
+            'siteName' => getenv('SITE_NAME'),
+        ],
     ],
 
     // Dev environment settings

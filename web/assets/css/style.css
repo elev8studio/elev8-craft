@@ -1,0 +1,131 @@
+/*
+ * Colors
+ */
+/*
+ * Typography
+ */
+/**
+ * Media Query Mixins
+ */
+html {
+  font-size: 10px;
+  overscroll-behavior: none;
+  scroll-behavior: smooth; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background-color: transparent; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #f31c4f;
+  border-radius: 1rem; }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #f31c4f; }
+
+body.el {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400;
+  position: relative;
+  overflow-x: auto;
+  margin: auto;
+  letter-spacing: 0.02rem;
+  color: #111111; }
+  body.el * {
+    box-sizing: border-box; }
+  body.el hr {
+    height: 1px;
+    margin: 2.5rem 0;
+    border: 0;
+    background: #ccc; }
+  body.el main {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    min-height: 75vh; }
+    body.el main section {
+      padding: 2rem 3rem; }
+  body.el img {
+    pointer-events: none; }
+
+/*
+ * Colors
+ */
+/*
+ * Typography
+ */
+/**
+ * Media Query Mixins
+ */
+/**
+ * Media Query Mixins
+ */
+/*
+ * Colors
+ */
+/*
+ * Typography
+ */
+/**
+ * Media Query Mixins
+ */
+/*
+ * Colors
+ */
+/*
+ * Typography
+ */
+/**
+ * Media Query Mixins
+ */
+/*
+ * Colors
+ */
+/*
+ * Typography
+ */
+.el h1 {
+  font-size: 6rem; }
+  @media (min-width: 650px) {
+    .el h1 {
+      font-size: 8.53906rem; } }
+
+.el h2 {
+  font-size: 4rem; }
+  @media (min-width: 650px) {
+    .el h2 {
+      font-size: 5.52344rem; } }
+
+.el h3 {
+  font-size: 2rem; }
+  @media (min-width: 650px) {
+    .el h3 {
+      font-size: 2.50781rem; } }
+
+.el h4 {
+  font-size: 1.8rem; }
+  @media (min-width: 650px) {
+    .el h4 {
+      font-size: 2.20625rem; } }
+
+.el .button {
+  font-size: 1.8rem; }
+
+.el .body1 {
+  font-size: 1.8rem; }
+  @media (min-width: 650px) {
+    .el .body1 {
+      font-size: 2.20625rem; } }
+
+.el .body2 {
+  font-size: 1.6rem; }
+  @media (min-width: 650px) {
+    .el .body2 {
+      font-size: 1.90469rem; } }
+
+.el a {
+  color: inherit; }
+  .el a:hover {
+    color: #f31c4f; }

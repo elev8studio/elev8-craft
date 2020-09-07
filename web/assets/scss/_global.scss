@@ -1,0 +1,62 @@
+@import "variables";
+@import "mixins";
+
+html {
+    font-size: 10px;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $highlight;
+    border-radius: 1rem;
+
+    &:hover {
+        background-color: $highlight;
+    }
+}
+
+body.el {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 400;
+    position: relative;
+    overflow-x: auto;
+    margin: auto;
+    letter-spacing: 0.02rem;
+    color: $black;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    hr {
+        height: 1px;
+        margin: 2.5rem 0;
+        border: 0;
+        background: #ccc;
+    }
+
+    main {
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        flex-direction: column;
+        min-height: 75vh;
+
+        section {
+            padding: 2rem 3rem;
+        }
+    }
+
+    img {
+        pointer-events: none;
+    }
+}

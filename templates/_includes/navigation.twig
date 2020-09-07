@@ -1,0 +1,22 @@
+{% import "_includes/macros" as macros %}
+
+{% set navigation = craft.app.globals.getSetByHandle('navigation').menu.all() %}
+
+<nav class="navigation{{ macros.is_desktop(desktop) }}" id="navigation{{ macros.is_desktop(desktop) }}">
+
+    <div class="navigation-close">
+        {% include "_includes/vectors/closeMenu.svg" %}
+    </div>
+
+    <ul class="navigation-menu">
+        {% for block in navigation %}
+            <li class="navigation-menu-item">
+                {% set slug = block.navLink.getUrl()|substringAfterLast('/') %}
+                <a {{ block.navLink.getLinkAttributes() }} class="{{ macros.is_active(slug) }}">
+                    {{ block.navLink.getText() }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+</nav>

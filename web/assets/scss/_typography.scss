@@ -1,0 +1,65 @@
+@import "mixins";
+@import "functions";
+@import "variables";
+
+.el {
+    h1 {
+        font-size: $h1;
+
+        @include small {
+            font-size: responsiveFontSizes($small, $h1);
+        }
+    }
+
+    h2 {
+        font-size: $h2;
+
+        @include small {
+            font-size: responsiveFontSizes($small, $h2);
+        }
+    }
+
+    h3 {
+        font-size: $h3;
+
+        @include small {
+            font-size: responsiveFontSizes($small, $h3);
+        }
+    }
+
+    h4 {
+        font-size: $h4;
+
+        @include small {
+            font-size: responsiveFontSizes($small, $h4);
+        }
+    }
+
+    .button {
+        font-size: $h4;
+    }
+
+    .body1 {
+        font-size: $body1;
+
+        @include small {
+            font-size: responsiveFontSizes($small, $body1);
+        }
+    }
+
+    .body2 {
+        font-size: $body2;
+
+        @include small {
+            font-size: responsiveFontSizes($small, $body2);
+        }
+    }
+
+    a {
+        color: inherit;
+
+        &:hover {
+            color: $highlight;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{% if entry['layoutBlocks'] is defined %}
+
+    {% set blocks = entry.layoutBlocks.level(1) %}
+
+    {% if blocks|length %}
+
+        {% for block in blocks.all() %}
+
+            <section class="{{ block.sectionClass }}" id="{{ block.sectionId }}">
+
+                {% include "_includes/" ~ block.type.handle|kebab %}
+
+            </section>
+
+        {% endfor %}
+
+    {% endif %}
+
+{% endif %}

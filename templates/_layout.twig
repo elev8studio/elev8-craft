@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="{{ craft.app.language }}">
+
+    {% import "_includes/macros" as macros %}
+
+    {% set seo = getSeoField() %}
+
+    {{ macros.meta(
+        seo.title,
+        seo.description
+    ) }}
+
+    <body id="body" class="el {{ entry.bodyClass }}">
+
+{#        {% include "_includes/navigation" with { desktop: false } %}#}
+
+        <main id="container">
+
+            {% include "_includes/header" %}
+
+            {% block content %}{% endblock %}
+
+        </main>
+
+    </body>
+
+</html>
