@@ -3,7 +3,6 @@
  */
 
 $small: 650px;
-$content: 800px;
 $medium: 960px;
 $wide: 1280px;
 
@@ -27,18 +26,6 @@ $wide: 1280px;
 
 @mixin wide {
     @media (min-width: #{$wide}) {
-        @content;
-    }
-}
-
-@mixin narrow-small {
-    @media (min-width: 1px) and (max-width: #{$medium - 1px}) {
-        @content;
-    }
-}
-
-@mixin medium-wide {
-    @media (min-width: #{$medium}) {
         @content;
     }
 }

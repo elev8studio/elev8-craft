@@ -1,62 +1,40 @@
 @import "variables";
 @import "mixins";
 
-html {
-    font-size: 10px;
-    overscroll-behavior: none;
-    scroll-behavior: smooth;
+hr {
+    height: 1px;
+    margin: 2.5rem 0;
+    border: 0;
+    background: #ccc;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
+main {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    min-height: 75vh;
 
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: $highlight;
-    border-radius: 1rem;
-
-    &:hover {
-        background-color: $highlight;
+    section {
+        width: 100%;
+        padding: 0;
     }
 }
 
-body.el {
-    font-family: 'Avenir', sans-serif;
-    font-weight: 400;
-    position: relative;
-    overflow-x: auto;
+.content {
+    overflow: hidden;
+    max-width: $wide;
     margin: auto;
-    letter-spacing: 0.02rem;
-    color: $black;
+    padding: 1rem 2.5rem;
+}
 
-    * {
-        box-sizing: border-box;
-    }
+.block-background {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 
-    hr {
-        height: 1px;
-        margin: 2.5rem 0;
-        border: 0;
-        background: #ccc;
-    }
-
-    main {
-        display: flex;
-        overflow: hidden;
-        align-items: center;
-        flex-direction: column;
-        min-height: 75vh;
-
-        section {
-            padding: 2rem 3rem;
-        }
-    }
-
-    img {
-        pointer-events: none;
-    }
+img {
+    pointer-events: none;
 }

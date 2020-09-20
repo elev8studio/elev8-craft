@@ -26,13 +26,13 @@ return [
         'securityKey' => App::env('SECURITY_KEY'),
 
         'aliases' => [
+            'siteName' => getenv('SITE_NAME'),
             'webroot' => dirname(__DIR__) . '/web',
             'web' => getenv('BASE_URL'),
-            'assetBasePath' => dirname(__DIR__) . '/web/assets',
-            'assetBaseUrl' => getenv('BASE_URL').'/web/assets',
-            'basePath' => dirname(__DIR__) . '/web',
+            'assetUrl' => getenv('BASE_URL').'/assets',
+            'assetPath' => getenv('BASE_PATH').'/assets',
+            'basePath' => getenv('BASE_PATH'),
             'baseUrl' => getenv('BASE_URL'),
-            'siteName' => getenv('SITE_NAME'),
         ],
     ],
 

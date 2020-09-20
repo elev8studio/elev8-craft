@@ -1,0 +1,6 @@
+{% if block['vector'] and block.vector.one() %}
+    {% set vector = block.vector.one().getUrl() %}
+    <div class="block-background" style="background-image: url({{ vector }})"></div>
+{% endif %}
+
+<h2>{{ block.subheading }}</h2>

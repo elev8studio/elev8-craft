@@ -2,64 +2,94 @@
 @import "functions";
 @import "variables";
 
-.el {
-    h1 {
-        font-size: $h1;
+h1, h2, h3, h4, p, i, a, li, td {
+    margin: 0;
+    padding: .5rem 0;
+}
 
-        @include small {
-            font-size: responsiveFontSizes($small, $h1);
-        }
+$h1: 3rem;
+$h2: 2.5rem;
+$h3: 2rem;
+$h4: 1.8rem;
+$body1: 1.8rem;
+$body2: 1.6rem;
+$button: 1.8rem;
+$caption: 1.4rem;
+$quote: 2.5rem;
+
+h1 {
+    font-size: $h1;
+    line-height: 5rem;
+    padding: 1rem 0;
+
+    @include small {
+        font-size: responsiveFontSizes($small, $h1);
+        line-height: 7rem;
     }
+}
 
-    h2 {
-        font-size: $h2;
+h2 {
+    font-size: $h2;
+    line-height: 3.5rem;
+    letter-spacing: 0.1rem;
+    padding: 2rem;
 
-        @include small {
-            font-size: responsiveFontSizes($small, $h2);
-        }
+    @include small {
+        font-size: responsiveFontSizes($small, $h2);
+        line-height: 4rem;
     }
+}
 
-    h3 {
-        font-size: $h3;
+h3 {
+    font-size: $h3;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
 
-        @include small {
-            font-size: responsiveFontSizes($small, $h3);
-        }
+    @include small {
+        font-size: responsiveFontSizes($small, $h3);
+        line-height: 3.5rem;
     }
+}
 
-    h4 {
-        font-size: $h4;
+h4 {
+    font-size: $h4;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
 
-        @include small {
-            font-size: responsiveFontSizes($small, $h4);
-        }
+    @include small {
+        font-size: responsiveFontSizes($small, $h4);
+        line-height: 3rem;
     }
+}
 
-    .button {
-        font-size: $h4;
-    }
+i.icon {
+    font-size: 4rem;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: $highlight;
+}
 
-    .body1 {
-        font-size: $body1;
+p {
+    font-size: $body1;
+}
 
-        @include small {
-            font-size: responsiveFontSizes($small, $body1);
-        }
-    }
+.button {
+    font-size: $h4;
+}
 
-    .body2 {
-        font-size: $body2;
+.body1 {
+    font-size: $body1;
+}
 
-        @include small {
-            font-size: responsiveFontSizes($small, $body2);
-        }
-    }
+.body2 {
+    font-size: $body2;
+}
 
-    a {
-        color: inherit;
+a {
+    color: inherit;
 
-        &:hover {
-            color: $highlight;
-        }
+    &:hover {
+        color: $highlight;
     }
 }

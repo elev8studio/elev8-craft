@@ -1,0 +1,11 @@
+<div class="content">
+
+    <div class="list">
+        {% for item in block.iconList.all() %}
+            <div>
+                <i class="icon list-icon fa fa-{{ item.iconName }}"></i>
+                <h2 class="list-item">{{ item.heading }}</h2>
+            </div>
+        {% endfor %}
+    </div>
+</div>

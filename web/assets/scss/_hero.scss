@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixins";
+
+.hero {
+    position: relative;
+
+    .block-background {
+        overflow: hidden;
+        height: 50vh;
+    }
+
+    h1 {
+        max-width: 70rem;
+        margin: auto;
+        text-align: center;
+        color: $black;
+    }
+
+    h2 {
+        text-align: center;
+        color: $white;
+        background-color: $highlightSoft;
+        position: relative;
+    }
+}

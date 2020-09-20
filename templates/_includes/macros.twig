@@ -16,7 +16,7 @@
         <meta name="referrer" content="origin-when-cross-origin"/>
         {% do view.registerCssFile("@web/assets/css/normalize.css") %}
         {% do view.registerCssFile("@web/assets/css/style.min.css") %}
-        {% do view.registerCssFile("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css") %}
+        {% do view.registerCssFile("https://use.fontawesome.com/releases/v5.14.0/css/all.css") %}
         {% do view.registerJsFile("@web/assets/js/dist/script.min.js") %}
         {# <link rel="apple-touch-icon" sizes="57x57" href="{{ alias("") }}"> #}
         {# <link rel="apple-touch-icon" sizes="60x60" href="{{ alias("") }}"> #}
@@ -31,7 +31,11 @@
         {# <link rel="icon" type="image/png" sizes="32x32" href="{{ alias("") }}"> #}
         {# <link rel="icon" type="image/png" sizes="96x96" href="{{ alias("") }}"> #}
         {# <link rel="icon" type="image/png" sizes="16x16" href="{{ alias("") }}"> #}
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Avenir&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
         <meta name="theme-color" content="#ffffff">
     </head>
+{% endmacro %}
+
+{% macro vectorBg(block) %}
+{{ block['vector'] and block.vector.one() ? block.vector.one().getUrl() : '' }}
 {% endmacro %}

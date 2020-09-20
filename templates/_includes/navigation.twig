@@ -2,15 +2,24 @@
 
 {% set navigation = craft.app.globals.getSetByHandle('navigation').menu.all() %}
 
-<nav class="navigation{{ macros.is_desktop(desktop) }}" id="navigation{{ macros.is_desktop(desktop) }}">
+<nav class="navigation">
 
-    <div class="navigation-close">
-        {% include "_includes/vectors/closeMenu.svg" %}
+    <div class="navigation-top">
+        <div class="burger-container">
+            <div id="burger">
+                <div class="bar topBar"></div>
+                <div class="bar btmBar"></div>
+            </div>
+        </div>
+
+        {% set logo = craft.assets().filename('logo-white.png').one() %}
+        <img class="logo logo-mobile" src="{{ logo.getUrl() }}" alt="">
     </div>
 
-    <ul class="navigation-menu">
+
+    <ul class="menu">
         {% for block in navigation %}
-            <li class="navigation-menu-item">
+            <li class="menu-item">
                 {% set slug = block.navLink.getUrl()|substringAfterLast('/') %}
                 <a {{ block.navLink.getLinkAttributes() }} class="{{ macros.is_active(slug) }}">
                     {{ block.navLink.getText() }}
