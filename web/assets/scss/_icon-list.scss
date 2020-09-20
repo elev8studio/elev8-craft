@@ -3,30 +3,25 @@
 
 .icon-list {
 
-    .content {
-        margin: 3rem auto 3rem;
+    .title {
+        text-align: center;
+    }
 
-        .title {
-            text-align: center;
+    .list {
+        display: grid;
+        padding-top: 3rem;
+
+        @include small {
+            grid-gap: 7rem;
+            grid-template-columns: repeat(3, 1fr);
         }
 
-        .list {
-            display: grid;
-            padding-top: 3rem;
-
-            @include small {
-                grid-gap: 7rem;
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            div {
-                padding: 2rem;
-            }
-        }
-
-        .list-item {
-            text-align: center;
+        div {
+            padding: 2rem;
         }
     }
 
+    .list-item {
+        text-align: center;
+    }
 }

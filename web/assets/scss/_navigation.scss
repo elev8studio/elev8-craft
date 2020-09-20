@@ -121,20 +121,22 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
         background-blend-mode: darken;
         padding-bottom: 2rem;
 
-        .burger-container {
-            transform: rotate(90deg);
+        .navigation-top {
+            .burger-container {
+                transform: rotate(90deg);
 
-            #burger {
-                .bar {
-                    transition: all 0.4s $cubic;
-                    transition-delay: 0.2s;
+                #burger {
+                    .bar {
+                        transition: all 0.4s $cubic;
+                        transition-delay: 0.2s;
 
-                    &.topBar {
-                        transform: translateY(4px) rotate(45deg);
-                    }
+                        &.topBar {
+                            transform: translateY(4px) rotate(45deg);
+                        }
 
-                    &.btmBar {
-                        transform: translateY(2px) rotate(-45deg);
+                        &.btmBar {
+                            transform: translateY(2px) rotate(-45deg);
+                        }
                     }
                 }
             }
