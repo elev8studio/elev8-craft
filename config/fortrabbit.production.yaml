@@ -1,0 +1,10 @@
+app: elev8now
+ssh_url: elev8now@deploy.eu2.frbit.com
+git_remote: elev8now/master
+asset_path: web/assets
+before:
+    code/up:
+        - 'echo  "Script example: " $(git rev-parse HEAD)'
+after:
+    code/down:
+        - 'php craft migrate/all'

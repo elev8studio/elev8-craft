@@ -4,6 +4,7 @@
     "craftcms/cms": "^3.4.25",
     "craftcms/redactor": "2.7.4",
     "ether/seo": "3.6.6",
+    "fortrabbit/craft-copy": "1.0.0-RC12",
     "sebastianlenz/linkfield": "1.0.23",
     "spicyweb/craft-neo": "2.8.7",
     "studioespresso/craft-dumper": "2.0.0",
@@ -21,10 +22,7 @@
   },
   "config": {
     "sort-packages": true,
-    "optimize-autoloader": true,
-    "platform": {
-      "php": "7.0"
-    }
+    "optimize-autoloader": true
   },
   "scripts": {
     "post-root-package-install": [

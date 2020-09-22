@@ -33,3 +33,8 @@
 *.sql
 *.log
 
+
+# ASSETS (added by fortrabbit/craft-copy)
+/web/assets/*
+
+/web/cpresources/*
