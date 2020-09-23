@@ -11,6 +11,11 @@
     transition: all 0.5s ease-out, background 1s ease-out;
     transition-delay: 0.2s;
 
+    &.scroll {
+        background-color: $navy;
+        opacity: .9;
+    }
+
     @include small {
         position: fixed;
         display: flex;

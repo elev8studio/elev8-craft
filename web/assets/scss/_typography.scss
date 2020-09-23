@@ -21,6 +21,8 @@ h1 {
     font-size: $h1;
     line-height: 5rem;
     padding: 1rem 0;
+    font-weight: 600;
+    letter-spacing: .1rem;
 
     @include small {
         font-size: responsiveFontSizes($small, $h1);
@@ -32,7 +34,8 @@ h2 {
     font-size: $h2;
     line-height: 3.5rem;
     letter-spacing: 0.1rem;
-    padding: 2rem;
+    padding: 2rem 0;
+    font-weight: 500;
 
     @include small {
         font-size: responsiveFontSizes($small, $h2);
@@ -40,21 +43,23 @@ h2 {
     }
 }
 
-h3 {
+h3, h3 p {
     font-size: $h3;
-    line-height: 3rem;
+    line-height: 2.5rem;
     letter-spacing: 0.1rem;
+    font-weight: 500;
 
     @include small {
         font-size: responsiveFontSizes($small, $h3);
-        line-height: 3.5rem;
+        line-height: 3rem;
     }
 }
 
-h4 {
+h4, h4 p {
     font-size: $h4;
     line-height: 3rem;
     letter-spacing: 0.1rem;
+    font-weight: 500;
 
     @include small {
         font-size: responsiveFontSizes($small, $h4);
@@ -72,6 +77,7 @@ i.icon {
 
 p {
     font-size: $body1;
+    line-height: 2rem;
 }
 
 .button {

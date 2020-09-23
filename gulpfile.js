@@ -28,6 +28,7 @@ gulp.task('sass', function () {
 // Create a gulp task to minify css file
 gulp.task('minify-css', () => {
   return gulp.src('./web/assets/css/style.css')
+    .pipe(autoprefixer())
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./web/assets/css'));

@@ -3,11 +3,18 @@
 
 .hero {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+
+    @include small {
+        height: 60vh;
+    }
 
     .block-background {
-        background-color: $highlightSoft;
+        background-color: $navy;
         overflow: hidden;
-        height: 50vh;
+        flex-grow: 1;
     }
 
     h1 {
@@ -22,5 +29,9 @@
         color: $white;
         background-color: $highlightSoft;
         position: relative;
+
+        @include narrow {
+            padding: 2rem;
+        }
     }
 }
