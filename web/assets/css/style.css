@@ -222,20 +222,19 @@ body.elev8 {
   body.elev8 img {
     pointer-events: none; }
   body.elev8 .header {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
-    height: 5rem;
+    height: 8rem;
     transition: all 0.5s ease-out, background 1s ease-out;
     transition-delay: 0.2s; }
     body.elev8 .header.scroll {
-      background-color: #15134f;
-      opacity: .9; }
+      opacity: .9;
+      background-color: #15134f; }
     @media (min-width: 650px) {
       body.elev8 .header {
-        position: fixed;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -337,11 +336,12 @@ body.elev8 {
         display: block;
         width: 100%;
         text-decoration: none;
-        color: #ffffff; }
+        color: #ffffff;
+        font-weight: 500; }
   body.elev8 .navigation-open {
     transition: all 0.3s ease-in, background 0.5s ease-in;
     transition-delay: 0.25s;
-    height: 50vh;
+    height: 40vh;
     background-color: #15134f;
     opacity: 0.9;
     background-blend-mode: darken;
@@ -365,15 +365,18 @@ body.elev8 {
   body.elev8 .hero {
     position: relative;
     display: flex;
-    flex-direction: column;
-    height: 40vh; }
+    flex-direction: column; }
     @media (min-width: 650px) {
       body.elev8 .hero {
-        height: 60vh; } }
+        height: 50vh; } }
     body.elev8 .hero .block-background {
       background-color: #15134f;
       overflow: hidden;
-      flex-grow: 1; }
+      flex-grow: 1;
+      height: 40vh; }
+      @media (min-width: 650px) {
+        body.elev8 .hero .block-background {
+          height: auto; } }
     body.elev8 .hero h1 {
       max-width: 70rem;
       margin: auto;

@@ -5,16 +5,20 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 40vh;
 
     @include small {
-        height: 60vh;
+        height: 50vh;
     }
 
     .block-background {
         background-color: $navy;
         overflow: hidden;
         flex-grow: 1;
+        height: 40vh;
+
+        @include small {
+            height: auto;
+        }
     }
 
     h1 {
