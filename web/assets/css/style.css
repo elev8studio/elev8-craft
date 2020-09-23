@@ -42,7 +42,7 @@ h1 {
   font-size: 3rem;
   line-height: 5rem;
   padding: 1rem 0;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: .1rem; }
   @media (min-width: 650px) {
     h1 {
@@ -54,7 +54,7 @@ h2 {
   line-height: 3.5rem;
   letter-spacing: 0.1rem;
   padding: 2rem 0;
-  font-weight: 500; }
+  font-weight: 600; }
   @media (min-width: 650px) {
     h2 {
       font-size: 2.72852rem;
@@ -64,7 +64,7 @@ h3, body.elev8 .horizontal-split-text__subheading em, h3 p, body.elev8 .horizont
   font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: 0.1rem;
-  font-weight: 500; }
+  font-weight: 600; }
   @media (min-width: 650px) {
     h3, body.elev8 .horizontal-split-text__subheading em, h3 p, body.elev8 .horizontal-split-text__subheading em p {
       font-size: 2.15234rem;
@@ -89,7 +89,8 @@ i.icon {
 
 p {
   font-size: 1.8rem;
-  line-height: 2rem; }
+  line-height: 2rem;
+  font-weight: 500; }
 
 .button {
   font-size: 1.8rem; }
@@ -115,7 +116,7 @@ html {
   box-sizing: border-box; }
 
 body.elev8 {
-  font-family: 'Avenir Next', sans-serif;
+  font-family: muli, sans-serif;
   font-weight: 400;
   position: relative;
   overflow-x: auto;
@@ -410,7 +411,7 @@ body.elev8 {
     font-size: 3rem;
     line-height: 5rem;
     padding: 1rem 0;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: .1rem; }
     @media (min-width: 650px) {
       body.elev8 h1 {
@@ -421,7 +422,7 @@ body.elev8 {
     line-height: 3.5rem;
     letter-spacing: 0.1rem;
     padding: 2rem 0;
-    font-weight: 500; }
+    font-weight: 600; }
     @media (min-width: 650px) {
       body.elev8 h2 {
         font-size: 2.72852rem;
@@ -430,7 +431,7 @@ body.elev8 {
     font-size: 2rem;
     line-height: 2.5rem;
     letter-spacing: 0.1rem;
-    font-weight: 500; }
+    font-weight: 600; }
     @media (min-width: 650px) {
       body.elev8 h3, body.elev8 .horizontal-split-text__subheading em, body.elev8 h3 p, body.elev8 .horizontal-split-text__subheading em p {
         font-size: 2.15234rem;
@@ -452,7 +453,8 @@ body.elev8 {
     color: #ec2d5b; }
   body.elev8 p {
     font-size: 1.8rem;
-    line-height: 2rem; }
+    line-height: 2rem;
+    font-weight: 500; }
   body.elev8 .button {
     font-size: 1.8rem; }
   body.elev8 .body1 {
