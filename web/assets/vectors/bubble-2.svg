@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 224.47 170.42">
+  <defs>
+    <style>.cls-1{fill:url(#linear-gradient);}.cls-2{fill:#99e0eb;}.cls-3{opacity:0.4;fill:url(#linear-gradient-2);}.cls-4{fill:#6d4eca;}.cls-5{fill:#fff;}</style>
+    <linearGradient id="linear-gradient" x1="-7022.48" y1="-2550.78" x2="-6852.29" y2="-2550.78" gradientTransform="translate(-6828.46 -2454.05) rotate(180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#99e0eb"></stop>
+      <stop offset="1" stop-color="#6d4eca"></stop>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="78.94" y1="75.71" x2="223.79" y2="75.71" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#99e0eb"></stop>
+      <stop offset="1" stop-color="#5f92d0"></stop>
+    </linearGradient>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_2-2" data-name="Layer 2">
+      <polygon class="cls-1" points="151.47 23.03 194.02 96.72 151.47 170.42 66.37 170.42 23.82 96.72 66.37 23.03 151.47 23.03"></polygon>
+      <polygon class="cls-2" points="78 75.44 76 72.13 76 79.29 78 75.99 78 75.44"></polygon>
+      <polygon class="cls-2" points="73 66.62 71 63.31 71 88.11 73 84.8 73 66.62"></polygon>
+      <polygon class="cls-2" points="68 57.8 66 54.5 66 96.93 68 93.62 68 57.8"></polygon>
+      <polygon class="cls-2" points="61 105.74 63 102.44 63 48.99 61 45.68 61 105.74"></polygon>
+      <rect class="cls-2" x="56" y="41.97" width="2" height="68"></rect>
+      <rect class="cls-2" x="51" y="41.97" width="2" height="68"></rect>
+      <rect class="cls-2" x="46" y="41.97" width="1" height="68"></rect>
+      <rect class="cls-2" x="40" y="41.97" width="2" height="68"></rect>
+      <rect class="cls-2" x="35" y="41.97" width="2" height="68"></rect>
+      <rect class="cls-2" x="30" y="41.97" width="2" height="68"></rect>
+      <rect class="cls-2" x="25" y="41.97" width="2" height="68"></rect>
+      <rect class="cls-2" x="20" y="41.97" width="2" height="68"></rect>
+      <polygon class="cls-2" points="17 45.68 15 48.99 15 102.44 17 105.74 17 45.68"></polygon>
+      <polygon class="cls-2" points="12 54.5 10 57.8 10 93.62 12 96.93 12 54.5"></polygon>
+      <polygon class="cls-2" points="7 63.31 5 66.62 5 84.8 7 88.11 7 63.31"></polygon>
+      <polygon class="cls-2" points="0 75.99 2 79.29 2 72.13 0 75.44 0 75.99"></polygon>
+      <polygon class="cls-3" points="115.15 138.44 78.94 75.71 115.15 12.99 187.58 12.99 223.79 75.71 187.58 138.44 115.15 138.44"></polygon>
+      <polygon class="cls-4" points="206.45 138.48 200.78 128.66 206.45 118.84 208.37 119.95 203.35 128.66 208.37 137.37 206.45 138.48"></polygon>
+      <polygon class="cls-4" points="214.5 138.48 208.83 128.66 214.5 118.84 216.42 119.95 211.4 128.66 216.42 137.37 214.5 138.48"></polygon>
+      <polygon class="cls-4" points="222.55 138.48 216.88 128.66 222.55 118.84 224.47 119.95 219.45 128.66 224.47 137.37 222.55 138.48"></polygon>
+      <polygon class="cls-5" points="89.7 61.32 84.04 51.5 89.7 41.69 91.63 42.8 86.6 51.5 91.63 60.21 89.7 61.32"></polygon>
+      <polygon class="cls-5" points="97.75 61.32 92.09 51.5 97.75 41.69 99.68 42.8 94.65 51.5 99.68 60.21 97.75 61.32"></polygon>
+      <polygon class="cls-5" points="105.81 61.32 100.14 51.5 105.81 41.69 107.73 42.8 102.7 51.5 107.73 60.21 105.81 61.32"></polygon>
+      <polygon class="cls-2" points="174.91 44.25 162.14 22.13 174.91 0 176.36 0.83 164.06 22.13 176.36 43.42 174.91 44.25"></polygon>
+      <polygon class="cls-2" points="193.78 44.25 181.01 22.13 193.78 0 195.22 0.83 182.93 22.13 195.22 43.42 193.78 44.25"></polygon>
+      <polygon class="cls-2" points="212.65 44.25 199.87 22.13 212.65 0 214.09 0.83 201.8 22.13 214.09 43.42 212.65 44.25"></polygon>
+      <path class="cls-5" d="M77.7,167.27H68.13L63.34,159l4.79-8.3H77.7l4.79,8.3Z"></path>
+    </g>
+  </g>
+</svg>
