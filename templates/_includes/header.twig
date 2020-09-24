@@ -3,9 +3,9 @@
     <div class="content">
 
         {% set logo = craft.assets().filename('logo-white.png').one() %}
-        <img class="logo" src="{{ logo.getUrl() }}" alt="">
+        <img class="logo" src="{{ logo.getUrl() }}" alt="Elev8 logo">
 
-        {% include "_includes/navigation" with { desktop: true } %}
+        {% include "_includes/navigation" %}
 
     </div>
 

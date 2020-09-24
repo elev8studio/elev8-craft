@@ -12,15 +12,15 @@
 
     <body id="body" class="elev8 {{ entry.bodyClass }}">
 
-{#        {% include "_includes/navigation" with { desktop: false } %}#}
+        {% include "_includes/header" %}
 
         <main id="container">
-
-            {% include "_includes/header" %}
 
             {% block content %}{% endblock %}
 
         </main>
+
+        {% include "_includes/footer" %}
 
     </body>
 
