@@ -16,7 +16,8 @@
 
 # ASSETS
 /web/cpresources/*
-/web/assets/*
+/web/assets/vectors
+/web/assets/images
 
 # BUILD FILES
 /bower_components/

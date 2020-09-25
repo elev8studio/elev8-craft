@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins";
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+
+    .block-background {
+        background-color: $midnightNavy;
+        overflow: hidden;
+        flex-grow: 1;
+        filter: var(--filter);
+    }
+
+    h1 {
+        max-width: 70rem;
+        margin: auto;
+        text-align: center;
+        color: $black;
+    }
+
+    h2 {
+        text-align: center;
+        color: $white;
+        background-color: $highlightSoft;
+        position: relative;
+
+        @include narrow {
+            padding: 2rem;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixins";
+@import "typography";
+
+.footer {
+    color: $white;
+    background-color: var(--footer);
+    height: 25rem;
+
+    .content {
+        padding: 3rem 4rem;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .copyright {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .footer-logo {
+                height: 8rem;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .social-icons {
+                a {
+                    transition: all 0.3s;
+
+                    i {
+                        font-size: $h1;
+                        display: inline-block;
+                        margin: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

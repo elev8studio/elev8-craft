@@ -1,0 +1,35 @@
+@import "functions";
+@import "mixins";
+@import "variables";
+@import "typography";
+@import "dark-mode";
+
+html {
+    font-size: 10px;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body.elev8 {
+    font-family: muli, sans-serif;
+    font-weight: 400;
+    position: relative;
+    overflow-x: auto;
+    margin: auto;
+    letter-spacing: 0.02rem;
+    color: var(--text);
+    min-height: 100vh;
+
+    @import "global";
+    @import "header";
+    @import "footer";
+    @import "navigation";
+    @import "hero";
+    @import "icon-list";
+    @import "horizontal-split";
+}

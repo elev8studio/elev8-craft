@@ -1,0 +1,42 @@
+@import "variables";
+@import "mixins";
+
+hr {
+    height: 1px;
+    margin: 2.5rem 0;
+    border: 0;
+    background: #ccc;
+}
+
+main {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    min-height: 75vh;
+    filter: var(--filter);
+
+    section {
+        width: 100%;
+        padding: 0;
+        transition: all .5s;
+    }
+}
+
+.content {
+    overflow: hidden;
+    max-width: $wide;
+    margin: auto;
+    padding: 1rem 2.5rem;
+}
+
+.block-background {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+img {
+    pointer-events: none;
+}
