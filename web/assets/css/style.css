@@ -156,7 +156,8 @@ html[data-theme='dark'] {
     background-image: linear-gradient(180deg, #021037 0%, #20206A 19%, #4184B1 66%, #62E7F7 100%);
     transition: var(--switch-transition-duration);
     border: 0.2rem solid #0f3d73;
-    overflow: hidden; }
+    overflow: hidden;
+    cursor: pointer; }
     #theme-toggle + label span {
       background: #fffad8;
       border-radius: 50%;
@@ -508,13 +509,15 @@ body.elev8 {
       display: flex;
       align-items: center;
       min-height: 6rem;
-      margin: 0 1.5rem;
       transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       transition-delay: 0.5s;
       transform: scale(1.15) translateY(-30px);
       pointer-events: none;
       opacity: 0;
-      border-bottom: 0.1rem solid #ec2d5b; }
+      border-bottom: 0.1rem solid #ec2d5b;
+      width: 50%;
+      margin: auto;
+      text-align: center; }
       @media (min-width: 650px) {
         body.elev8 .navigation .menu .menu-item {
           min-height: auto;
@@ -537,7 +540,7 @@ body.elev8 {
         @media (max-width: 649px) {
           body.elev8 .navigation .menu .menu-item:last-of-type {
             justify-content: center;
-            margin-top: 2rem;
+            margin-top: .5rem;
             border-bottom: none; } }
   body.elev8 .navigation-open {
     height: 60vh;

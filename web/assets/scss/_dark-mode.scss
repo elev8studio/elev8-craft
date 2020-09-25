@@ -46,6 +46,7 @@ html[data-theme='dark'] {
         transition: var(--switch-transition-duration);
         border: .2rem solid $navy;
         overflow: hidden;
+        cursor: pointer;
 
         span {
             background: #fffad8;

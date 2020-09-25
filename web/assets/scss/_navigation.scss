@@ -85,13 +85,15 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
             display: flex;
             align-items: center;
             min-height: 6rem;
-            margin: 0 1.5rem;
             transition: transform 0.5s $cubic, opacity 0.6s $cubic;
             transition-delay: 0.5s;
             transform: scale(1.15) translateY(-30px);
             pointer-events: none;
             opacity: 0;
             border-bottom: .1rem solid $highlight;
+            width: 50%;
+            margin: auto;
+            text-align: center;
 
             @include small {
                 min-height: auto;
@@ -118,7 +120,7 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 
                 @include narrow {
                     justify-content: center;
-                    margin-top: 2rem;
+                    margin-top: .5rem;
                     border-bottom: none;
                 }
             }
