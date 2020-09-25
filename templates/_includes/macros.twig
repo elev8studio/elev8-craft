@@ -7,33 +7,7 @@
 {% endmacro %}
 
 {% macro meta(title, description) %}
-    <head>
-        <title>{{ title }}</title>
-        <meta content="{{ description }}" name="description">
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="referrer" content="origin-when-cross-origin"/>
-        {% do view.registerCssFile("@web/assets/css/normalize.css") %}
-        {% do view.registerCssFile("@web/assets/css/style.min.css") %}
-        {% do view.registerCssFile("https://use.fontawesome.com/releases/v5.14.0/css/all.css") %}
-        {% do view.registerJsFile("@web/assets/js/dist/script.min.js") %}
-        {# <link rel="apple-touch-icon" sizes="57x57" href="{{ alias("") }}"> #}
-        {# <link rel="apple-touch-icon" sizes="60x60" href="{{ alias("") }}"> #}
-        {# <link rel="apple-touch-icon" sizes="72x72" href="{{ alias("") }}"> #}
-        {# <link rel="apple-touch-icon" sizes="76x76" href="{{ alias("") }}"> #}
-        {# <link rel="apple-touch-icon" sizes="114x114" href="{{ alias("") }}"> #}
-        {# <link rel="apple-touch-icon" sizes="120x120" href="{{ alias("") }}"> #}
-        {# <link rel="apple-touch-icon" sizes="144x144" href="{{ alias("") }}"> #}
-        {# <link rel="apple-touch-icon" sizes="152x152" href="{{ alias("") }}"> #}
-        {# <link rel="apple-touch-icon" sizes="180x180" href="{{ alias("") }}"> #}
-        {# <link rel="icon" type="image/png" sizes="192x192" href="{{ alias("") }}"> #}
-        {# <link rel="icon" type="image/png" sizes="32x32" href="{{ alias("") }}"> #}
-        {# <link rel="icon" type="image/png" sizes="96x96" href="{{ alias("") }}"> #}
-        {# <link rel="icon" type="image/png" sizes="16x16" href="{{ alias("") }}"> #}
-        <link rel="stylesheet" href="https://use.typekit.net/qnh6wky.css">
-        <meta name="theme-color" content="#ffffff">
-    </head>
+
 {% endmacro %}
 
 {% macro vectorBg(block) %}

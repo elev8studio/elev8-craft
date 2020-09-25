@@ -5,10 +5,7 @@
 
     {% set seo = getSeoField() %}
 
-    {{ macros.meta(
-        seo.title,
-        seo.description
-    ) }}
+    {% include "_includes/head" %}
 
     <body id="body" class="elev8 {{ entry.bodyClass }}">
 
