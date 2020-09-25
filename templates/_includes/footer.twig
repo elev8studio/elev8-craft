@@ -1,15 +1,9 @@
 <footer class="footer" id="footer">
     <div class="content">
-        <div class="links">
-            <div class="footer-logo">
-                {% set logo = craft.assets().filename('logo-solid-white.png').one() %}
-                <img class="logo" src="{{ logo.getUrl() }}" alt="Elev8 logo">
-            </div>
-            <div class="social-icons">
-                <a href="https://github.com/elev8now"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/jonathansmithies"><i class="fab fa-linkedin-in"></i></a>
-                <a href='{{ "mailto:support@elev8now.co.uk" | entities }}'><i class="fas fa-paper-plane"></i></a>
-            </div>
+        <div class="social-icons">
+            <a href="https://github.com/elev8now"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jonathansmithies"><i class="fab fa-linkedin-in"></i></a>
+            <a href='{{ "mailto:support@elev8now.co.uk" | entities }}'><i class="fas fa-paper-plane"></i></a>
         </div>
         {% set footer = craft.app.globals.getSetByHandle('footer') %}
         <div class="copyright">

@@ -9,6 +9,26 @@ html {
     overscroll-behavior: none;
     scroll-behavior: smooth;
     overflow-x: hidden;
+
+    // Theme variables
+    --bg: #{$white};
+    --bg-alt: #{$light};
+    --text: #{$black};
+    --text-highlight: #{$highlight};
+    --filter: saturate(1);
+    --header: #{$midnightNavy};
+    --footer: #{$darkNavy};
+}
+
+html[data-theme='dark'] {
+    // Theme variables
+    --bg: #282828;
+    --bg-alt: #{$darker};
+    --text: #{$light};
+    --text-highlight: #{$highlightSoft};
+    --filter: saturate(.85);
+    --header: #151515;
+    --footer: #151515;
 }
 
 * {

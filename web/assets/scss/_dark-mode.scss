@@ -1,16 +1,7 @@
 @import "variables";
 @import "mixins";
 
-html {
-    // Theme variables
-    --bg: #{$white};
-    --bg-alt: #{$light};
-    --text: #{$black};
-    --text-highlight: #{$highlight};
-    --filter: saturate(1);
-    --header: #{$midnightNavy};
-    --footer: #{$navy};
-
+:root {
     // Toggle variables
     --toggle-size: 1.5rem;
     --switch-w: 4em;
@@ -19,16 +10,6 @@ html {
     --switch-off-handle-x: -.125em;
     --switch-on-handle-x: calc(100% - .125em);
     --switch-transition-duration: .2s;
-}
-
-html[data-theme='dark'] {
-    --bg: #282828;
-    --bg-alt: #{$darker};
-    --text: #{$light};
-    --text-highlight: #{$highlightSoft};
-    --filter: saturate(.85);
-    --header: #151515;
-    --footer: #151515;
 }
 
 #theme-toggle {

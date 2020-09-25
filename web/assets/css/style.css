@@ -118,14 +118,7 @@ a {
 /**
  * Media Query Mixins
  */
-html {
-  --bg: #ffffff;
-  --bg-alt: #f7f7f7;
-  --text: #111111;
-  --text-highlight: #ec2d5b;
-  --filter: saturate(1);
-  --header: #15134f;
-  --footer: #0f3d73;
+:root {
   --toggle-size: 1.5rem;
   --switch-w: 4em;
   --switch-h: 2em;
@@ -133,15 +126,6 @@ html {
   --switch-off-handle-x: -.125em;
   --switch-on-handle-x: calc(100% - .125em);
   --switch-transition-duration: .2s; }
-
-html[data-theme='dark'] {
-  --bg: #282828;
-  --bg-alt: #222222;
-  --text: #f7f7f7;
-  --text-highlight: #e04171;
-  --filter: saturate(.85);
-  --header: #151515;
-  --footer: #151515; }
 
 #theme-toggle {
   display: none; }
@@ -182,7 +166,23 @@ html {
   font-size: 10px;
   overscroll-behavior: none;
   scroll-behavior: smooth;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  --bg: #ffffff;
+  --bg-alt: #f7f7f7;
+  --text: #111111;
+  --text-highlight: #ec2d5b;
+  --filter: saturate(1);
+  --header: #15134f;
+  --footer: #292752; }
+
+html[data-theme='dark'] {
+  --bg: #282828;
+  --bg-alt: #222222;
+  --text: #f7f7f7;
+  --text-highlight: #e04171;
+  --filter: saturate(.85);
+  --header: #151515;
+  --footer: #151515; }
 
 * {
   box-sizing: border-box; }
@@ -422,31 +422,24 @@ body.elev8 {
       color: #e04171; }
   body.elev8 .footer {
     color: #ffffff;
-    background-color: var(--footer);
-    height: 25rem; }
+    background-color: var(--footer); }
     body.elev8 .footer .content {
       padding: 3rem 4rem;
       display: flex;
       height: 100%;
       flex-direction: column;
       justify-content: space-between; }
-      body.elev8 .footer .content .copyright {
-        text-align: center;
-        padding: 1rem; }
-      body.elev8 .footer .content .links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; }
-        body.elev8 .footer .content .links .footer-logo {
-          height: 8rem; }
-          body.elev8 .footer .content .links .footer-logo img {
-            height: 100%; }
-        body.elev8 .footer .content .links .social-icons a {
+      body.elev8 .footer .content .social-icons {
+        margin: auto; }
+        body.elev8 .footer .content .social-icons a {
           transition: all 0.3s; }
-          body.elev8 .footer .content .links .social-icons a i {
+          body.elev8 .footer .content .social-icons a i {
             font-size: 3rem;
             display: inline-block;
             margin: 0 1rem; }
+      body.elev8 .footer .content .copyright {
+        text-align: center;
+        padding: 1rem; }
   @media (min-width: 650px) {
     body.elev8 .navigation {
       display: flex;
@@ -508,19 +501,20 @@ body.elev8 {
     body.elev8 .navigation .menu .menu-item {
       display: flex;
       align-items: center;
+      width: 50%;
       min-height: 6rem;
+      margin: auto;
       transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       transition-delay: 0.5s;
       transform: scale(1.15) translateY(-30px);
+      text-align: center;
       pointer-events: none;
       opacity: 0;
-      border-bottom: 0.1rem solid #ec2d5b;
-      width: 50%;
-      margin: auto;
-      text-align: center; }
+      border-bottom: 0.1rem solid #ec2d5b; }
       @media (min-width: 650px) {
         body.elev8 .navigation .menu .menu-item {
           min-height: auto;
+          margin: 0 1.5rem;
           transform: none;
           pointer-events: auto;
           opacity: 1;
