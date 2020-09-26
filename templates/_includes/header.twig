@@ -2,8 +2,11 @@
 
     <div class="content">
 
-        {% set logo = craft.assets().filename('logo-white.png').one() %}
-        <img class="logo" src="{{ logo.getUrl() }}" alt="Elev8 logo">
+        {% set logo = craft.assets().filename('elev8studio-logo.svg').one() %}
+
+        {{ svg(logo, sanitize=false, namespace=false)|attr({
+            class: 'logo'
+        }) }}
 
         {% include "_includes/navigation" %}
 

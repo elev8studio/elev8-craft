@@ -20,7 +20,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 9rem;
         padding: 1rem 2rem;
         background-color: transparent;
     }
@@ -38,6 +37,11 @@
 
         .logo {
             height: 100%;
+            width: auto;
+
+            path.logo-fill {
+                fill: $white;
+            }
 
             @include narrow {
                 display: none;

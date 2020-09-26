@@ -29,11 +29,13 @@ return [
             'siteName' => getenv('SITE_NAME'),
             'webroot' => dirname(__DIR__) . '/web',
             'web' => getenv('BASE_URL'),
-            'assetUrl' => getenv('BASE_URL').'/assets',
-            'assetPath' => getenv('BASE_PATH').'/assets',
+            'assetBasePath' => getenv('ASSET_BASE_PATH'),
+            'assetPublicPath' => getenv('ASSET_PUBLIC_PATH'),
             'basePath' => getenv('BASE_PATH'),
             'baseUrl' => getenv('BASE_URL'),
         ],
+
+        'extraAllowedFileExtensions' => 'sql'
     ],
 
     // Dev environment settings
