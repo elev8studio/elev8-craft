@@ -10,7 +10,6 @@
     height: 8rem;
     transition: all 0.5s ease-out, background 1s ease-out;
     transition-delay: 0.2s;
-    background-image: linear-gradient(180deg, $midnightNavy 0%, rgba(21, 19, 79, .85), rgba(21, 19, 79, .65), transparent);
 
     &.scroll {
         opacity: .9;

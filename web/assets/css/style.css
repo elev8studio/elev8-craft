@@ -316,11 +316,6 @@ body.elev8 {
     max-width: 1280px;
     margin: auto;
     padding: 1rem 2.5rem; }
-  body.elev8 .block-background {
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover; }
   body.elev8 img {
     pointer-events: none; }
   body.elev8 .header {
@@ -331,8 +326,7 @@ body.elev8 {
     width: 100%;
     height: 8rem;
     transition: all 0.5s ease-out, background 1s ease-out;
-    transition-delay: 0.2s;
-    background-image: linear-gradient(180deg, #15134f 0%, rgba(21, 19, 79, 0.85), rgba(21, 19, 79, 0.65), transparent); }
+    transition-delay: 0.2s; }
     body.elev8 .header.scroll {
       opacity: .9;
       background-color: var(--header); }
@@ -568,21 +562,28 @@ body.elev8 {
     display: flex;
     flex-direction: column;
     height: 60vh; }
-    body.elev8 .hero .block-background {
-      background-color: #15134f;
+    body.elev8 .hero-background {
+      position: relative;
       overflow: hidden;
       flex-grow: 1;
+      background-color: #15134f;
+      background-repeat: no-repeat;
+      background-position: unset;
+      background-size: cover;
       filter: var(--filter); }
+      @media (min-width: 650px) {
+        body.elev8 .hero-background {
+          background-position: center center; } }
     body.elev8 .hero h1 {
       max-width: 70rem;
       margin: auto;
       text-align: center;
       color: #111111; }
     body.elev8 .hero h2 {
+      position: relative;
       text-align: center;
       color: #ffffff;
-      background-color: #e04171;
-      position: relative; }
+      background-color: #e04171; }
       @media (max-width: 649px) {
         body.elev8 .hero h2 {
           padding: 2rem; } }
