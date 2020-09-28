@@ -331,7 +331,8 @@ body.elev8 {
     width: 100%;
     height: 8rem;
     transition: all 0.5s ease-out, background 1s ease-out;
-    transition-delay: 0.2s; }
+    transition-delay: 0.2s;
+    background-image: linear-gradient(180deg, #15134f 0%, rgba(21, 19, 79, 0.85), rgba(21, 19, 79, 0.65), transparent); }
     body.elev8 .header.scroll {
       opacity: .9;
       background-color: var(--header); }
