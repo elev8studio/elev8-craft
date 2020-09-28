@@ -54,6 +54,12 @@ let darkMode = () => {
     } else {
       document.documentElement.setAttribute('data-theme', 'light')
     }
+
+    let header = document.querySelector('.header')
+    if (header.classList.contains('navigation-open')) {
+      setTimeout(() => header.classList.remove('navigation-open'), 300);
+    }
+
   })
 }
 /**
