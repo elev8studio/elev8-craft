@@ -1,0 +1,35 @@
+childBlocks: ''
+field: 95bb7f79-d11f-4e9d-aa81-e64600ff3f53
+fieldLayouts:
+  0f0eb600-7c99-4665-8892-1cba193b72f5:
+    tabs:
+      -
+        fields:
+          6615c6a9-2999-40bf-8b0f-2aafda51da88:
+            required: false
+            sortOrder: 0
+          c9ae56dd-0d2d-48db-9a8e-195679072eaf:
+            required: false
+            sortOrder: 1
+          eaa35a80-8a4a-4899-a262-71fe40fb097f:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+      -
+        fields:
+          c66e6c0a-b52a-4675-ad32-e6d88ce12fb1:
+            required: false
+            sortOrder: 0
+          e3f3af88-6d54-472f-a1f6-52a81a2f443a:
+            required: false
+            sortOrder: 1
+        name: Code
+        sortOrder: 2
+handle: iconList
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Icon List'
+sortOrder: 8
+topLevel: true

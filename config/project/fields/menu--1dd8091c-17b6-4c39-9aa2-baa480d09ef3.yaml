@@ -1,0 +1,27 @@
+contentColumnType: string
+fieldGroup: 62b76306-9f87-4885-af7d-16855c915296
+handle: menu
+instructions: ''
+name: Menu
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - 135db71b-4d06-4a7a-9cbd-7029b47d8f93
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_menu}}'
+  fieldLayout: table
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: 'Add a link'
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

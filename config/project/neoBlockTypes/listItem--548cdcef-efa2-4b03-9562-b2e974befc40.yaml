@@ -1,0 +1,22 @@
+childBlocks: ''
+field: eaa35a80-8a4a-4899-a262-71fe40fb097f
+fieldLayouts:
+  5899faf2-a11c-47b8-bfd3-fe7bb2dde024:
+    tabs:
+      -
+        fields:
+          c9ae56dd-0d2d-48db-9a8e-195679072eaf:
+            required: false
+            sortOrder: 1
+          fd9881bd-664e-47cc-8ce8-5b0e81ad0963:
+            required: false
+            sortOrder: 0
+        name: Content
+        sortOrder: 1
+handle: listItem
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'List Item'
+sortOrder: 1
+topLevel: true

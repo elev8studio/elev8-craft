@@ -1,0 +1,32 @@
+childBlocks: ''
+field: 95bb7f79-d11f-4e9d-aa81-e64600ff3f53
+fieldLayouts:
+  0694633f-4e43-4181-a3ed-84f7ef08bdc1:
+    tabs:
+      -
+        fields:
+          1a270472-7b9a-4b1b-b79e-e10cd6fe0461:
+            required: false
+            sortOrder: 1
+          c9ae56dd-0d2d-48db-9a8e-195679072eaf:
+            required: false
+            sortOrder: 0
+        name: Content
+        sortOrder: 1
+      -
+        fields:
+          c66e6c0a-b52a-4675-ad32-e6d88ce12fb1:
+            required: false
+            sortOrder: 0
+          e3f3af88-6d54-472f-a1f6-52a81a2f443a:
+            required: false
+            sortOrder: 1
+        name: Code
+        sortOrder: 2
+handle: testimonials
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Testimonials
+sortOrder: 4
+topLevel: true
