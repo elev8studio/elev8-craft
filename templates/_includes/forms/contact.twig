@@ -1,9 +1,3 @@
-<p>
-    <span class="form-success" id="message-success">Thanks. We'll be in touch.</span>
-    <span class="form-error" id="message-error">Something went wrong. Please try again or contact us directly at <a
-            href="{{ 'mailto:help@elev8stud.io' | entities }}">{{ 'help@elev8stud.io' | encode }}</a></span>
-</p>
-
 {% macro errorList(errors) %}
     {% if errors %}
         <ul class="errors">
@@ -33,7 +27,7 @@
                    id="fromName"
                    type="text"
                    name="fromName"
-                   placeholder="John Smith"
+                   placeholder="Joe Bloggs"
                    value="{{ message.fromName|default('') }}"
                    required/>
             {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
@@ -45,7 +39,7 @@
                    id="fromEmail"
                    type="email"
                    name="fromEmail"
-                   placeholder="john@gmail.com"
+                   placeholder="joe@bloggs.com"
                    value="{{ message.fromEmail|default('') }}"
                    required/>
             {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
@@ -69,6 +63,12 @@
         <label for="form-validate"></label>
         <input id="form-validate" name="form-validate" type="text" style="display: none"/>
     </div>
+
+    <p>
+        <span class="form-success" id="message-success">Thanks. We'll be in touch.</span>
+        <span class="form-error" id="message-error">Something went wrong. Please try again or email us at <a
+                href="{{ 'mailto:help@elev8stud.io' | entities }}">{{ 'help@elev8stud.io' | encode }}</a></span>
+    </p>
 
     <div class="contact-form__send">
         <input class="button" type="submit" value="Send"/>
