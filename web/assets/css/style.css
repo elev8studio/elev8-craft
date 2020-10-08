@@ -137,6 +137,9 @@ a {
   --switch-on-handle-x: calc(100% - .125em);
   --switch-transition-duration: .2s; }
 
+.toggle-container {
+  min-width: 6rem; }
+
 #theme-toggle {
   display: none; }
   #theme-toggle + label {
@@ -183,7 +186,8 @@ html {
   --text-highlight: #ec2d5b;
   --filter: saturate(1);
   --header: #15134f;
-  --footer: #292752; }
+  --footer: #292752;
+  --input: #ffffff; }
 
 html[data-theme='dark'] {
   --bg: #282828;
@@ -192,7 +196,8 @@ html[data-theme='dark'] {
   --text-highlight: #e04171;
   --filter: saturate(.85);
   --header: #151515;
-  --footer: #151515; }
+  --footer: #151515;
+  --input: #aaaaaa; }
 
 * {
   box-sizing: border-box; }
@@ -376,8 +381,7 @@ body.elev8 {
         align-items: center;
         justify-content: center;
         padding: 1rem 2rem;
-        background-color: transparent;
-        background-image: linear-gradient(180deg, #15134f 0%, rgba(21, 19, 79, 0.8) 55%, rgba(21, 19, 79, 0.5) 70%, rgba(21, 19, 79, 0.2) 85%, rgba(21, 19, 79, 0) 100%); } }
+        background-color: transparent; } }
     body.elev8 .header .content {
       padding: 0; }
       @media (min-width: 650px) {
@@ -387,6 +391,9 @@ body.elev8 {
           justify-content: space-between;
           width: 100%;
           height: 100%; } }
+      body.elev8 .header .content a.logo-link {
+        height: 100%;
+        padding: 0; }
       body.elev8 .header .content .logo {
         height: 100%;
         width: auto; }
@@ -871,7 +878,8 @@ body.elev8 {
       border-radius: 0;
       transition: all .3s;
       width: 100%;
-      line-height: 2.5rem; }
+      line-height: 2.5rem;
+      background-color: var(--input); }
       body.elev8 .form .content .input:focus, body.elev8 .form .content .contact-form__name input:focus, body.elev8 .form .content .contact-form__email input:focus, body.elev8 .form .content .contact-form__subject input:focus, body.elev8 .form .content .contact-form__message input:focus, body.elev8 .form .content .contact-form__message textarea:focus {
         border-bottom: 2px solid #e04171; }
     body.elev8 .form .content .contact-form {

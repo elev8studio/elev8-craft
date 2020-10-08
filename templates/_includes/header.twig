@@ -4,9 +4,11 @@
 
         {% set logo = craft.assets().filename('elev8studio-logo.svg').one() %}
 
-        {{ svg(logo, sanitize=false, namespace=false)|attr({
-            class: 'logo'
-        }) }}
+        <a class="logo-link" href="/">
+            {{ svg(logo, sanitize=false, namespace=false)|attr({
+                class: 'logo'
+            }) }}
+        </a>
 
         {% include "_includes/navigation" %}
 

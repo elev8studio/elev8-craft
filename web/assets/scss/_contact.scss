@@ -37,6 +37,7 @@
             transition: all .3s;
             width: 100%;
             line-height: 2.5rem;
+            background-color: var(--input);
 
             &:focus {
                 border-bottom: 2px solid $highlightSoft;

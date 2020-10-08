@@ -18,6 +18,7 @@ html {
     --filter: saturate(1);
     --header: #{$midnightNavy};
     --footer: #{$darkNavy};
+    --input: #{$white};
 }
 
 html[data-theme='dark'] {
@@ -29,6 +30,7 @@ html[data-theme='dark'] {
     --filter: saturate(.85);
     --header: #151515;
     --footer: #151515;
+    --input: #{$grey};
 }
 
 * {

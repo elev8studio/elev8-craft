@@ -12,6 +12,10 @@
     --switch-transition-duration: .2s;
 }
 
+.toggle-container {
+    min-width: 6rem;
+}
+
 #theme-toggle {
     display: none;
 
