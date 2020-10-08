@@ -1,9 +1,6 @@
 /*
  * Colors
  */
-:root {
-  --highlight: #ec2d5b; }
-
 /*
  * Typography
  */
@@ -16,9 +13,6 @@
 /*
  * Colors
  */
-:root {
-  --highlight: #ec2d5b; }
-
 /*
  * Typography
  */
@@ -28,9 +22,6 @@
 /*
  * Colors
  */
-:root {
-  --highlight: #ec2d5b; }
-
 /*
  * Typography
  */
@@ -40,9 +31,6 @@
 /*
  * Colors
  */
-:root {
-  --highlight: #ec2d5b; }
-
 /*
  * Typography
  */
@@ -134,9 +122,6 @@ a {
 /*
  * Colors
  */
-:root {
-  --highlight: #ec2d5b; }
-
 /*
  * Typography
  */
@@ -344,8 +329,6 @@ body.elev8 {
   /*
  * Typography
  */ }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
   body.elev8 hr {
     height: 1px;
     margin: 2.5rem 0;
@@ -375,8 +358,6 @@ body.elev8 {
     pointer-events: none; }
   body.elev8 input {
     overflow: visible; }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
   body.elev8 .header {
     position: fixed;
     z-index: 1;
@@ -395,7 +376,8 @@ body.elev8 {
         align-items: center;
         justify-content: center;
         padding: 1rem 2rem;
-        background-color: transparent; } }
+        background-color: transparent;
+        background-image: linear-gradient(180deg, #15134f 0%, rgba(21, 19, 79, 0.8) 55%, rgba(21, 19, 79, 0.5) 70%, rgba(21, 19, 79, 0.2) 85%, rgba(21, 19, 79, 0) 100%); } }
     body.elev8 .header .content {
       padding: 0; }
       @media (min-width: 650px) {
@@ -413,12 +395,6 @@ body.elev8 {
         @media (max-width: 649px) {
           body.elev8 .header .content .logo {
             display: none; } }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
   body.elev8 h1, body.elev8 h2, body.elev8 h3, body.elev8 .horizontal-split-text__subheading em, body.elev8 h4, body.elev8 p, body.elev8 i, body.elev8 a, body.elev8 li, body.elev8 td {
     margin: 0;
     padding: .5rem 0; }
@@ -512,8 +488,6 @@ body.elev8 {
       body.elev8 .footer .content .copyright {
         text-align: center;
         padding: 1rem; }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
   @media (min-width: 650px) {
     body.elev8 .navigation {
       display: flex;
@@ -600,6 +574,7 @@ body.elev8 {
         position: relative;
         display: block;
         width: 100%;
+        white-space: nowrap;
         text-decoration: none;
         text-transform: uppercase;
         color: #ffffff; }
@@ -634,8 +609,6 @@ body.elev8 {
       opacity: 1; }
       body.elev8 .navigation-open .menu .menu-item a {
         pointer-events: auto; }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
   body.elev8 .hero {
     position: relative;
     display: flex;
@@ -666,8 +639,6 @@ body.elev8 {
       @media (max-width: 649px) {
         body.elev8 .hero h2 {
           padding: 2rem; } }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
   body.elev8 .icon-list .title {
     text-align: center; }
   body.elev8 .icon-list .list {
@@ -681,12 +652,6 @@ body.elev8 {
       padding: 2rem; }
   body.elev8 .icon-list .list-item {
     text-align: center; }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
   body.elev8 h1, body.elev8 h2, body.elev8 h3, body.elev8 .horizontal-split-text__subheading em, body.elev8 h4, body.elev8 p, body.elev8 i, body.elev8 a, body.elev8 li, body.elev8 td {
     margin: 0;
     padding: .5rem 0; }
@@ -806,12 +771,6 @@ body.elev8 {
         padding: 5rem; } }
     body.elev8 .horizontal-split-media__vector {
       background-color: transparent; }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
-  body.elev8 :root {
-    --highlight: #ec2d5b; }
   body.elev8 h1, body.elev8 h2, body.elev8 h3, body.elev8 .horizontal-split-text__subheading em, body.elev8 h4, body.elev8 p, body.elev8 i, body.elev8 a, body.elev8 li, body.elev8 td {
     margin: 0;
     padding: .5rem 0; }
@@ -947,3 +906,13 @@ body.elev8 {
         display: flex;
         justify-content: center;
         padding-top: 3rem; }
+        body.elev8 .form .content .contact-form__send input:focus {
+          outline: none; }
+      body.elev8 .form .content .contact-form .form-messages {
+        text-align: center; }
+        body.elev8 .form .content .contact-form .form-messages .form-success {
+          background-color: #41e0a5;
+          padding: 1rem 2rem; }
+        body.elev8 .form .content .contact-form .form-messages .form-error {
+          background-color: #aaaaaa;
+          padding: 1rem 2rem; }

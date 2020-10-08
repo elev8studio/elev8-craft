@@ -111,6 +111,7 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
                 position: relative;
                 display: block;
                 width: 100%;
+                white-space: nowrap;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $white;

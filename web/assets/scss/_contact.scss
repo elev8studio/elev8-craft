@@ -96,6 +96,26 @@
                 display: flex;
                 justify-content: center;
                 padding-top: 3rem;
+
+                input {
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .form-messages {
+                text-align: center;
+
+                .form-success {
+                    background-color: $mint;
+                    padding: 1rem 2rem;
+                }
+
+                .form-error {
+                    background-color: $grey;
+                    padding: 1rem 2rem;
+                }
             }
         }
     }
