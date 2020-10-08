@@ -27,7 +27,7 @@
                    id="fromName"
                    type="text"
                    name="fromName"
-                   placeholder="Jon Smith"
+                   placeholder="Mike Smith"
                    value="{{ message.fromName|default('') }}"
                    required/>
             {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
@@ -39,7 +39,7 @@
                    id="fromEmail"
                    type="email"
                    name="fromEmail"
-                   placeholder="jon@smith.com"
+                   placeholder="mike@smith.com"
                    value="{{ message.fromEmail|default('') }}"
                    required/>
             {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
