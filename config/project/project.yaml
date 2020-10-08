@@ -1,19 +1,29 @@
-dateModified: 1601905464
+dateModified: 1602166574
 email:
-  fromEmail: $GMAIL_EMAIL
+  fromEmail: help@elev8stud.io
   fromName: $SITE_NAME
-  replyToEmail: $GMAIL_EMAIL
+  replyToEmail: help@elev8stud.io
   template: null
   transportSettings:
-    password: $GMAIL_PASSWORD
-    timeout: '10'
-    username: $GMAIL_USERNAME
-  transportType: craft\mail\transportadapters\Gmail
+    apiKey: $SENDGRID_API_KEY
+  transportType: putyourlightson\sendgrid\mail\SendgridAdapter
 plugins:
-  copy:
+  contact-form:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      prependSender: 'On behalf of'
+      prependSubject: 'New website enquiry'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: help@elev8stud.io
+  contact-form-honeypot:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      honeypotParam: form-validate
   dospaces:
     edition: standard
     enabled: true
@@ -30,10 +40,18 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.8.0
+  password-policy:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  sendgrid:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   seo:
     edition: standard
     enabled: true

@@ -6,7 +6,8 @@
     $cache: &;
 
     &:nth-of-type(2n) {
-        background-color: var(--bg);
+        //background-color: var(--bg);
+
         .content {
             @include small {
                 .horizontal-split-text {
@@ -17,7 +18,7 @@
     }
 
     &:nth-of-type(2n+1) {
-        background-color: var(--bg-alt);
+        //background-color: var(--bg-alt);
 
         .content {
             flex-direction: column-reverse;

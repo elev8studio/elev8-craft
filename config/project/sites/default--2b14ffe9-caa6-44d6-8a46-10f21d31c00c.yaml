@@ -1,9 +1,0 @@
-baseUrl: $PRIMARY_SITE_URL
-enabled: true
-handle: default
-hasUrls: true
-language: en-GB
-name: Elev8
-primary: true
-siteGroup: 6f8ea70e-15c5-42ea-a9bd-220853948d4b
-sortOrder: 1

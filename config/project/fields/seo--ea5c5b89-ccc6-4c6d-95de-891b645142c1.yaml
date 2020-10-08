@@ -6,7 +6,7 @@ name: SEO
 searchable: false
 settings:
   description: ''
-  hideSocial: '1'
+  hideSocial: ''
   robots:
     - ''
     - ''
@@ -14,20 +14,10 @@ settings:
     - ''
     - ''
     - ''
-  socialImage: ''
+  socialImage:
+    - '630'
   suffixAsPrefix: null
   title:
-    -
-      __assoc__:
-        -
-          - key
-          - '1'
-        -
-          - locked
-          - '0'
-        -
-          - template
-          - '{title}'
     -
       __assoc__:
         -
@@ -38,7 +28,7 @@ settings:
           - '1'
         -
           - template
-          - ' | {{ siteName }}'
+          - '{{ siteName }} | {title}'
   titleSuffix: null
 translationKeyFormat: null
 translationMethod: none

@@ -19,9 +19,9 @@ $quote: 2.5rem;
 
 h1 {
     font-size: $h1;
+    font-weight: 700;
     line-height: 5rem;
     padding: 1rem 0;
-    font-weight: 700;
     letter-spacing: .1rem;
 
     @include small {
@@ -32,10 +32,10 @@ h1 {
 
 h2 {
     font-size: $h2;
-    line-height: 3.5rem;
-    letter-spacing: 0.1rem;
-    padding: 2rem 0 2.2rem;
     font-weight: 600;
+    line-height: 3.5rem;
+    padding: 2rem 0 2.2rem;
+    letter-spacing: 0.1rem;
 
     @include small {
         font-size: responsiveFontSizes($small, $h2);
@@ -45,9 +45,9 @@ h2 {
 
 h3, h3 p {
     font-size: $h3;
+    font-weight: 600;
     line-height: 2.5rem;
     letter-spacing: 0.1rem;
-    font-weight: 600;
 
     @include small {
         font-size: responsiveFontSizes($small, $h3);
@@ -57,9 +57,9 @@ h3, h3 p {
 
 h4, h4 p {
     font-size: $h4;
+    font-weight: 500;
     line-height: 3rem;
     letter-spacing: 0.1rem;
-    font-weight: 500;
 
     @include small {
         font-size: responsiveFontSizes($small, $h4);
@@ -77,12 +77,24 @@ i.icon {
 
 p {
     font-size: $body1;
-    line-height: 2rem;
     font-weight: 500;
+    line-height: 2rem;
 }
 
 .button {
-    font-size: $h4;
+    font-size: $h3;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: $white;
+    border: .2rem solid $highlightSoft;
+    background-color: $highlightSoft;
+
+    &:hover, &:active {
+        background-color: rgba(224, 65, 113, .85);
+    }
 }
 
 .body1 {

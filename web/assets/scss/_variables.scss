@@ -16,6 +16,10 @@ $midnightNavy: #15134f;
 $slate: #708090;
 $light: #f7f7f7;
 
+:root {
+    --highlight: #{$highlight};
+}
+
 /*
  * Typography
  */
