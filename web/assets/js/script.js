@@ -1,7 +1,8 @@
 window.addEventListener('DOMContentLoaded', function () {
   openMenu()
   animateHeader()
-  darkMode()
+  toggleDarkMode()
+
 })
 
 /**
@@ -40,28 +41,4 @@ let animateHeader = () => {
 }
 /**
  * End Header Animation
- */
-
-/**
- * Begin Dark Mode
- */
-let darkMode = () => {
-  const darkmodeToggle = document.querySelector('input[name=theme-toggle]')
-
-  darkmodeToggle.addEventListener('change', function () {
-    if (this.checked) {
-      document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light')
-    }
-
-    let header = document.querySelector('.header')
-    if (header.classList.contains('navigation-open')) {
-      setTimeout(() => header.classList.remove('navigation-open'), 300);
-    }
-
-  })
-}
-/**
- * End Dark Mode
  */

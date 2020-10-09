@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1be5a1484e3df2d2b1d8fcf63e2721a6",
+    "content-hash": "69c1bfc3803e9f2823d77c57cfac5deb",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -2029,6 +2029,53 @@
                 "single sign on"
             ],
             "time": "2020-07-18T17:54:32+00:00"
+        },
+        {
+            "name": "luwes/craft3-codemirror",
+            "version": "1.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luwes/craft3-codemirror/zipball/cdf5e08ea658c44cd9c3908ddaab2f86e032d07b",
+                "reference": "cdf5e08ea658c44cd9c3908ddaab2f86e032d07b",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-beta.20"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "CodeMirror",
+                "handle": "code-mirror",
+                "changelogUrl": "https://raw.githubusercontent.com/luwes/craft3-codemirror/master/CHANGELOG.md",
+                "class": "luwes\\codemirror\\CodeMirror"
+            },
+            "autoload": {
+                "psr-4": {
+                    "luwes\\codemirror\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Wesley Luyten",
+                    "homepage": "https://wesleyluyten.com"
+                }
+            ],
+            "description": "Add the awesome in-browser code editor CodeMirror as a field type.",
+            "keywords": [
+                "cms",
+                "codemirror",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "docs": "https://github.com/luwes/craft3-codemirror/blob/master/README.md",
+                "issues": "https://github.com/luwes/craft3-codemirror/issues"
+            },
+            "time": "2019-12-18T03:32:28+00:00"
         },
         {
             "name": "marcusschwarz/lesserphp",

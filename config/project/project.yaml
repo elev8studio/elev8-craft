@@ -1,4 +1,4 @@
-dateModified: 1602166574
+dateModified: 1602229378
 email:
   fromEmail: help@elev8stud.io
   fromName: $SITE_NAME
@@ -8,6 +8,10 @@ email:
     apiKey: $SENDGRID_API_KEY
   transportType: putyourlightson\sendgrid\mail\SendgridAdapter
 plugins:
+  code-mirror:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   contact-form:
     edition: standard
     enabled: true

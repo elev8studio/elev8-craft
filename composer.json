@@ -6,6 +6,7 @@
     "craftcms/contact-form-honeypot": "1.0.2",
     "craftcms/redactor": "2.7.5",
     "ether/seo": "3.6.6",
+    "luwes/craft3-codemirror": "1.0.2",
     "percipioglobal/craft-password-policy": "1.0.6",
     "putyourlightson/craft-sendgrid": "1.2.2",
     "sebastianlenz/linkfield": "1.0.23",

@@ -1,0 +1,10 @@
+<div class="content">
+    {% if block.heading|length %}
+        <h1>{{ block.heading }}</h1>
+    {% endif %}
+    {% if block.heading|length %}
+        <h1>{{ block.subheading }}</h1>
+    {% endif %}
+
+    <div>{{ block.code|raw }}</div>
+</div>

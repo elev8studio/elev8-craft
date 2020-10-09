@@ -70,9 +70,9 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 
     .menu {
         position: relative;
-        overflow: hidden;
         padding: 0 5rem 0;
         list-style: none;
+        overflow: visible;
 
         @include small {
             display: flex;

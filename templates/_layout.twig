@@ -7,7 +7,7 @@
 
     {% include "_includes/head" %}
 
-    <body id="body" class="elev8 {{ entry.bodyClass }}">
+    <body id="body" class="elev8 {{ entry.bodyClass|default('') }}">
 
         {% include "_includes/header" %}
 

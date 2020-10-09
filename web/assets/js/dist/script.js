@@ -1,7 +1,30 @@
+window.addEventListener('load', function () {
+  const darkmodeToggle = document.querySelector('input[name=theme-toggle]')
+
+  let getTheme = (bool) => bool ? 'dark' : 'light'
+
+  let preference = localStorage.getItem('theme')
+  let system = window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+
+  darkmodeToggle.checked = preference ? preference === 'dark' : system
+  document.documentElement.setAttribute('data-theme', getTheme(darkmodeToggle.checked))
+
+  darkmodeToggle.addEventListener('change', function () {
+    document.documentElement.setAttribute('data-theme', getTheme(this.checked))
+    localStorage.setItem('theme', getTheme(this.checked))
+
+    setTimeout(() => document.querySelector('.header')
+      .classList
+      .remove('navigation-open'), 300)
+  })
+})
+
 window.addEventListener('DOMContentLoaded', function () {
   openMenu()
   animateHeader()
-  darkMode()
+  toggleDarkMode()
+
 })
 
 /**
@@ -40,28 +63,4 @@ let animateHeader = () => {
 }
 /**
  * End Header Animation
- */
-
-/**
- * Begin Dark Mode
- */
-let darkMode = () => {
-  const darkmodeToggle = document.querySelector('input[name=theme-toggle]')
-
-  darkmodeToggle.addEventListener('change', function () {
-    if (this.checked) {
-      document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light')
-    }
-
-    let header = document.querySelector('.header')
-    if (header.classList.contains('navigation-open')) {
-      setTimeout(() => header.classList.remove('navigation-open'), 300);
-    }
-
-  })
-}
-/**
- * End Dark Mode
  */
