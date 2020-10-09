@@ -8,7 +8,8 @@ window.addEventListener('load', function () {
     window.matchMedia('(prefers-color-scheme: dark)').matches
 
   darkmodeToggle.checked = preference ? preference === 'dark' : system
-  document.documentElement.setAttribute('data-theme', getTheme(darkmodeToggle.checked))
+  document.documentElement.setAttribute('data-theme',
+    getTheme(darkmodeToggle.checked))
 
   darkmodeToggle.addEventListener('change', function () {
     document.documentElement.setAttribute('data-theme', getTheme(this.checked))
@@ -20,31 +21,7 @@ window.addEventListener('load', function () {
   })
 })
 
-window.addEventListener('DOMContentLoaded', function () {
-  openMenu()
-  animateHeader()
-  toggleDarkMode()
-
-})
-
-/**
- * Begin Mobile Menu
- */
-let openMenu = () => {
-  const burger = document.querySelector('.burger-container')
-  burger.onclick = () => {
-    let header = document.querySelector('.header')
-    header.classList.toggle('navigation-open')
-  }
-}
-/**
- * End Mobile Menu
- */
-
-/**
- * Begin Header Animation
- */
-let animateHeader = () => {
+window.addEventListener('load', function () {
   let previous = window.pageYOffset
   document.addEventListener('scroll', () => {
     let header = document.querySelector('.header')
@@ -60,7 +37,11 @@ let animateHeader = () => {
         : header.setAttribute('style', 'transform: none'),
       (previous = windowOffset <= 0 ? 0 : windowOffset)
   })
-}
-/**
- * End Header Animation
- */
+})
+window.addEventListener('DOMContentLoaded', function () {
+  const burger = document.querySelector('.burger-container')
+  burger.onclick = () => {
+    let header = document.querySelector('.header')
+    header.classList.toggle('navigation-open')
+  }
+})

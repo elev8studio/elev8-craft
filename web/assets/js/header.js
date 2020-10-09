@@ -1,28 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
-  openMenu()
-  animateHeader()
-  toggleDarkMode()
-
-})
-
-/**
- * Begin Mobile Menu
- */
-let openMenu = () => {
-  const burger = document.querySelector('.burger-container')
-  burger.onclick = () => {
-    let header = document.querySelector('.header')
-    header.classList.toggle('navigation-open')
-  }
-}
-/**
- * End Mobile Menu
- */
-
-/**
- * Begin Header Animation
- */
-let animateHeader = () => {
+window.addEventListener('load', function () {
   let previous = window.pageYOffset
   document.addEventListener('scroll', () => {
     let header = document.querySelector('.header')
@@ -38,7 +14,4 @@ let animateHeader = () => {
         : header.setAttribute('style', 'transform: none'),
       (previous = windowOffset <= 0 ? 0 : windowOffset)
   })
-}
-/**
- * End Header Animation
- */
+})

@@ -8,7 +8,8 @@ window.addEventListener('load', function () {
     window.matchMedia('(prefers-color-scheme: dark)').matches
 
   darkmodeToggle.checked = preference ? preference === 'dark' : system
-  document.documentElement.setAttribute('data-theme', getTheme(darkmodeToggle.checked))
+  document.documentElement.setAttribute('data-theme',
+    getTheme(darkmodeToggle.checked))
 
   darkmodeToggle.addEventListener('change', function () {
     document.documentElement.setAttribute('data-theme', getTheme(this.checked))
