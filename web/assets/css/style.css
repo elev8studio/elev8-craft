@@ -140,20 +140,6 @@ a {
 .toggle-container {
   min-width: 6rem; }
 
-li.toggle-container.menu-item:before {
-  color: #ffffff;
-  position: absolute;
-  right: 10rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  white-space: nowrap; }
-
-html[data-theme='light'] li.toggle-container.menu-item:before {
-  content: 'Light'; }
-
-html[data-theme='dark'] li.toggle-container.menu-item:before {
-  content: 'Dark'; }
-
 #theme-toggle {
   display: none; }
   #theme-toggle + label {
@@ -631,7 +617,7 @@ body.elev8 {
             margin-top: .5rem;
             border-bottom: none; } }
   body.elev8 .navigation-open {
-    height: 60vh;
+    height: 40vh;
     padding-bottom: 2rem;
     transition: all 0.3s ease-in, background 0.5s ease-in;
     transition-delay: 0.25s;
@@ -657,12 +643,12 @@ body.elev8 {
   body.elev8 .hero {
     position: relative;
     display: flex;
-    flex-direction: column;
-    height: 60vh; }
+    flex-direction: column; }
     body.elev8 .hero-background {
       position: relative;
       overflow: hidden;
       flex-grow: 1;
+      height: 40vh;
       background-color: #15134f;
       background-repeat: no-repeat;
       background-position: unset;
@@ -670,7 +656,8 @@ body.elev8 {
       filter: var(--filter); }
       @media (min-width: 650px) {
         body.elev8 .hero-background {
-          background-position: center center; } }
+          background-position: top center;
+          height: 50vh; } }
     body.elev8 .hero h1 {
       max-width: 70rem;
       margin: auto;

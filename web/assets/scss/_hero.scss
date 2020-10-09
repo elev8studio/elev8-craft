@@ -5,12 +5,12 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 60vh;
 
     &-background {
         position: relative;
         overflow: hidden;
         flex-grow: 1;
+        height: 40vh;
         background-color: $midnightNavy;
         background-repeat: no-repeat;
         background-position: unset;
@@ -18,7 +18,8 @@
         filter: var(--filter);
 
         @include small {
-            background-position: center center;
+            background-position: top center;
+            height: 50vh;
         }
     }
 

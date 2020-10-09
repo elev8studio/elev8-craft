@@ -16,24 +16,6 @@
     min-width: 6rem;
 }
 
-li.toggle-container.menu-item:before {
-    color: $white;
-    position: absolute;
-    right: 10rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-
-html[data-theme='light'] li.toggle-container.menu-item:before {
-    content: 'Light';
-}
-
-html[data-theme='dark'] li.toggle-container.menu-item:before {
-    content: 'Dark';
-}
-
-
 #theme-toggle {
     display: none;
 
