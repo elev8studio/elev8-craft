@@ -13,7 +13,7 @@
         </div>
 
         {% set logo = craft.assets().filename('elev8studio-logo.svg').one() %}
-        <a class="logo-link" href="/">
+        <a class="logo-link" href="/" aria-label="Visit homepage">
             {{ svg(logo, sanitize=false, namespace=false)|attr({
                 class: 'logo logo-mobile'
             }) }}

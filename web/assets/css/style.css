@@ -203,7 +203,8 @@ html[data-theme='dark'] {
   box-sizing: border-box; }
 
 body.elev8 {
-  font-family: muli, sans-serif;
+  font-family: 'Muli', sans-serif;
+  font-display: swap;
   font-weight: 400;
   position: relative;
   overflow-x: auto;
