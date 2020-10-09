@@ -194,7 +194,7 @@ html[data-theme='dark'] {
   --bg-alt: #222222;
   --text: #f7f7f7;
   --text-highlight: #e04171;
-  --filter: saturate(.85);
+  --filter: saturate(.9);
   --header: #151515;
   --footer: #151515;
   --input: #aaaaaa; }

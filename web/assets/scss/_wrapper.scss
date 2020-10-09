@@ -27,7 +27,7 @@ html[data-theme='dark'] {
     --bg-alt: #{$darker};
     --text: #{$light};
     --text-highlight: #{$highlightSoft};
-    --filter: saturate(.85);
+    --filter: saturate(.9);
     --header: #151515;
     --footer: #151515;
     --input: #{$grey};
