@@ -1,59 +1,29 @@
 childBlocks: ''
 field: 95bb7f79-d11f-4e9d-aa81-e64600ff3f53
 fieldLayouts:
-  -
+  d24afd9e-139f-4112-916f-6783da98ecbe:
     tabs:
       -
-        elements:
-          -
-            fieldUid: c9ae56dd-0d2d-48db-9a8e-195679072eaf
-            instructions: null
-            label: null
+        fields:
+          1a270472-7b9a-4b1b-b79e-e10cd6fe0461:
             required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 1a270472-7b9a-4b1b-b79e-e10cd6fe0461
-            instructions: null
-            label: null
+            sortOrder: 1
+          a0d3b33b-126e-45c3-a3b8-eac104153c6c:
             required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: a0d3b33b-126e-45c3-a3b8-eac104153c6c
-            instructions: null
-            label: null
+            sortOrder: 2
+          c9ae56dd-0d2d-48db-9a8e-195679072eaf:
             required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
+            sortOrder: 0
         name: Content
         sortOrder: 1
       -
-        elements:
-          -
-            fieldUid: c66e6c0a-b52a-4675-ad32-e6d88ce12fb1
-            instructions: null
-            label: null
+        fields:
+          c66e6c0a-b52a-4675-ad32-e6d88ce12fb1:
             required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: e3f3af88-6d54-472f-a1f6-52a81a2f443a
-            instructions: null
-            label: null
+            sortOrder: 0
+          e3f3af88-6d54-472f-a1f6-52a81a2f443a:
             required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
+            sortOrder: 1
         name: Code
         sortOrder: 2
 handle: gallery
