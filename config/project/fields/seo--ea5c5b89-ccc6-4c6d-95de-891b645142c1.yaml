@@ -5,7 +5,7 @@ instructions: ''
 name: SEO
 searchable: false
 settings:
-  description: ''
+  description: 'Web development studio based in Bristol and South West England. We build uniquely crafted, bespoke and user friendly websites. We develop web based applications using React.js and Laravel. '
   hideSocial: ''
   robots:
     - ''
@@ -28,7 +28,7 @@ settings:
           - '1'
         -
           - template
-          - '{{ siteName }} | {title}'
+          - 'Web Development in Bristol | {{ siteName }}'
   titleSuffix: null
 translationKeyFormat: null
 translationMethod: none

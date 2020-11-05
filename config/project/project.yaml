@@ -1,4 +1,4 @@
-dateModified: 1602253479
+dateModified: 1604578430
 email:
   fromEmail: help@elev8stud.io
   fromName: $SITE_NAME
@@ -76,7 +76,7 @@ plugins:
       sitemapLimit: '1000'
       sitemapName: sitemap
       socialImage:
-        - '288'
+        - '630'
       title:
         -
           __assoc__:
@@ -90,7 +90,7 @@ plugins:
               - template
               - '{{ siteName }} | {title}'
       titleSuffix: null
-      twitterHandle: ''
+      twitterHandle: TheElev8Studio
   sprout-encode-email:
     edition: standard
     enabled: true
