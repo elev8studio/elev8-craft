@@ -14,6 +14,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ alias("@web/favicon-16x16.png") }}">
     <meta name="theme-color" content="#ffffff">
 
+    {# Google Analytics - Global site tag (gtag.js) #}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8Y1F5SMEB"></script>
+    <script>
+    window.dataLayer = window.dataLayer || []
+
+    function gtag () {dataLayer.push(arguments)}
+
+    gtag('js', new Date())
+
+    gtag('config', 'G-J8Y1F5SMEB')
+    </script>
+    {# End Google Analytics #}
+
     {# Google Tag Manager #}
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -68,16 +81,5 @@
             crossorigin="anonymous"></script>
     {# End jQuery #}
 
-    {# Google Analytics - Global site tag (gtag.js) #}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8Y1F5SMEB"></script>
-    <script>
-    window.dataLayer = window.dataLayer || []
 
-    function gtag () {dataLayer.push(arguments)}
-
-    gtag('js', new Date())
-
-    gtag('config', 'G-J8Y1F5SMEB')
-    </script>
-    {# End Google Analytics #}
 </head>
