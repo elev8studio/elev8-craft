@@ -3,9 +3,7 @@
 
 .form {
 	.content {
-		padding: 5rem 3rem 8rem;
-
-		@apply flex items-center flex-col justify-center;
+		@apply pt-20 px-12 pb-32 flex items-center flex-col justify-center;
 
 		.form-success,
 		.form-error {
