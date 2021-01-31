@@ -230,8 +230,13 @@
 			/******/ ['./web/assets/js/app.js'],
 			/******/ ['./web/assets/scss/style.scss'],
 			/******/
-		] /******/ /******/ /******/ /******/ /******/ // no chunk on demand loading // no prefetching // no preloaded // no HMR // no HMR manifest
-		/******/ /******/ /******/ /******/ /******/ /******/ var checkDeferredModules = function () {} // install a JSONP callback for chunk loading
+		] // no chunk on demand loading // no prefetching // no preloaded // no HMR // no HMR manifest
+		/******/ /******/
+		/******/ /******/
+		/******/ /******/
+		/******/ /******/
+		/******/ /******/
+		/******/ var checkDeferredModules = function () {} // install a JSONP callback for chunk loading
 		/******/
 		/******/ /******/ var webpackJsonpCallback = function (
 			parentChunkLoadingFunction,
@@ -278,8 +283,8 @@
 			/******/
 		}
 		/******/
-		/******/ var chunkLoadingGlobal = (self['webpackChunk'] =
-			self['webpackChunk'] || [])
+		/******/ var chunkLoadingGlobal = (self['webpackChunkelev8studio'] =
+			self['webpackChunkelev8studio'] || [])
 		/******/ chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0))
 		/******/ chunkLoadingGlobal.push = webpackJsonpCallback.bind(
 			null,

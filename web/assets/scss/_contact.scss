@@ -3,79 +3,43 @@
 
 .form {
 	.content {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		justify-content: center;
 		padding: 5rem 3rem 8rem;
+
+		@apply flex items-center flex-col justify-center;
 
 		.form-success,
 		.form-error {
-			display: none;
+			@apply hidden;
 		}
 
 		.form__heading {
-			display: inline-block;
-			margin-bottom: 2rem;
-			padding-bottom: 0;
-			border-bottom: 0.2rem solid #ec2d5b;
+			@apply inline-block mb-8 pb-0 border-2 border-highlight;
 		}
 
 		.form__subheading {
-			padding-top: 3rem;
-			text-align: center;
+			@apply pt-12 text-center;
 		}
 
 		.input {
-			font-size: $h4;
-			display: block;
-			margin: 1rem 0 2rem;
-			padding: 1rem;
-			border-width: 0;
-			border-bottom: 2px solid rgba(236, 45, 91, 0.35);
-			outline: none;
-			border-radius: 0;
-			transition: all 0.3s;
-			width: 100%;
-			line-height: 2.5rem;
-			background-color: var(--input);
+			@apply block mt-4 mx-0 mb-8 p-4 border-0 border-b-2 outline-none leading-10 w-full transition-all duration-300 rounded-none focus:border-highlightSoft;
 
-			&:focus {
-				border-bottom: 2px solid $highlightSoft;
-			}
+			font-size: $h4;
+			border-color: rgba(236, 45, 91, 0.35);
+			background-color: var(--input);
 		}
 
 		.contact-form {
-			width: 100%;
-			padding-top: 3rem;
-
-			@include wide {
-				width: 80%;
-			}
+			@apply w-full pt-12 xl:w-4/5;
 
 			.form-group {
-				display: flex;
-				justify-content: space-around;
-				flex-direction: column;
-				margin: auto;
-				width: 100%;
-
-				@include small {
-					grid-gap: 5rem;
-					flex-direction: row;
-				}
+				@apply flex justify-around flex-col m-auto w-full sm:gap-20 flex-row;
 			}
 
 			&__name,
 			&__email,
 			&__subject,
 			&__message {
-				margin: 1rem 0 2rem;
-				flex-grow: 1;
-
-				@include wide {
-					margin: 1rem 2rem 0;
-				}
+				@apply mt-4 mx-0 mb-8 flex-grow xl:mx-8 xl:mb-0;
 
 				input {
 					@extend .input;
@@ -83,11 +47,12 @@
 			}
 
 			&__message {
-				flex-grow: 1;
+				@apply flex-grow;
 
 				textarea {
 					@extend .input;
-					resize: none;
+
+					@apply resize-none;
 				}
 			}
 
@@ -96,28 +61,24 @@
 			}
 
 			&__send {
-				display: flex;
-				justify-content: center;
-				padding-top: 3rem;
+				@apply flex justify-center pt-12;
 
 				input {
 					&:focus {
-						outline: none;
+						@apply outline-none;
 					}
 				}
 			}
 
 			.form-messages {
-				text-align: center;
+				@apply text-center;
 
 				.form-success {
-					background-color: $mint;
-					padding: 1rem 2rem;
+					@apply bg-mint py-4 px-8;
 				}
 
 				.form-error {
-					background-color: $grey;
-					padding: 1rem 2rem;
+					@apply bg-grey py-4 px-8;
 				}
 			}
 		}

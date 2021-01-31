@@ -2,42 +2,27 @@
 @import 'mixins';
 
 .hero {
-	position: relative;
-	display: flex;
-	flex-direction: column;
+	@apply relative flex flex-col;
 
 	&-background {
-		position: relative;
-		overflow: hidden;
-		flex-grow: 1;
 		height: 40vh;
 		background-color: $midnightNavy;
-		background-repeat: no-repeat;
-		background-position: unset;
-		background-size: cover;
 		filter: var(--filter);
 
-		@include small {
-			background-position: top center;
+		@apply relative overflow-hidden flex-grow bg-no-repeat bg-cover md:bg-top;
+
+		@screen sm {
 			height: 50vh;
 		}
 	}
 
 	h1 {
 		max-width: 70rem;
-		margin: auto;
-		text-align: center;
-		color: $black;
+
+		@apply m-auto text-center text-black;
 	}
 
 	h2 {
-		position: relative;
-		text-align: center;
-		color: $white;
-		background-color: $highlightSoft;
-
-		@include narrow {
-			padding: 2rem;
-		}
+		@apply relative text-center text-white bg-highlightSoft p-8 sm:p-0;
 	}
 }
