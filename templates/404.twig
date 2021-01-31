@@ -1,14 +1,20 @@
-{% extends "layout/blueprint" %}
+{% extends 'layout/blueprint' %}
 
-{% block title %}Page not found{% endblock %}
+{% block title %}
+	Page not found
+{% endblock %}
 
-{% block bodyClass %}secondary-page four-oh-four{% endblock %}
+{% block bodyClass %}
+	secondary-page four-oh-four
+{% endblock %}
 
 {% block content %}
-
-    <section class="">
-        <h3>404 - Page not found</h3>
-        <p>Oops, you've made a wrong turn.</p>
-    </section>
-
+	<section class="">
+		<h3>
+			404 - Page not found
+		</h3>
+		<p>
+			Oops, you've made a wrong turn.
+		</p>
+	</section>
 {% endblock %}

@@ -7,26 +7,25 @@ $medium: 960px;
 $wide: 1280px;
 
 @mixin narrow {
-    @media (max-width: #{$small - 1px}) {
-        @content;
-    }
+	@media (max-width: #{$small - 1px}) {
+		@content;
+	}
 }
 
 @mixin small {
-    @media (min-width: #{$small}) {
-        @content;
-    }
+	@media (min-width: #{$small}) {
+		@content;
+	}
 }
 
 @mixin medium {
-    @media (min-width: #{$medium}) {
-        @content;
-    }
+	@media (min-width: #{$medium}) {
+		@content;
+	}
 }
 
 @mixin wide {
-    @media (min-width: #{$wide}) {
-        @content;
-    }
+	@media (min-width: #{$wide}) {
+		@content;
+	}
 }
-

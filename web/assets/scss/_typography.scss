@@ -1,10 +1,18 @@
-@import "mixins";
-@import "functions";
-@import "variables";
+@import 'mixins';
+@import 'functions';
+@import 'variables';
 
-h1, h2, h3, h4, p, i, a, li, td {
-    margin: 0;
-    padding: .5rem 0;
+h1,
+h2,
+h3,
+h4,
+p,
+i,
+a,
+li,
+td {
+	margin: 0;
+	padding: 0.5rem 0;
 }
 
 $h1: 3rem;
@@ -18,101 +26,105 @@ $caption: 1.4rem;
 $quote: 2.5rem;
 
 h1 {
-    font-size: $h1;
-    font-weight: 700;
-    line-height: 5rem;
-    padding: 1rem 0;
-    letter-spacing: .1rem;
+	font-size: $h1;
+	font-weight: 700;
+	line-height: 5rem;
+	padding: 1rem 0;
+	letter-spacing: 0.1rem;
 
-    @include small {
-        font-size: responsiveFontSizes($small, $h1);
-        line-height: 7rem;
-    }
+	@include small {
+		font-size: responsiveFontSizes($small, $h1);
+		line-height: 7rem;
+	}
 }
 
 h2 {
-    font-size: $h2;
-    font-weight: 600;
-    line-height: 3.5rem;
-    padding: 2rem 0 2.2rem;
-    letter-spacing: 0.1rem;
+	font-size: $h2;
+	font-weight: 600;
+	line-height: 3.5rem;
+	padding: 2rem 0 2.2rem;
+	letter-spacing: 0.1rem;
 
-    @include small {
-        font-size: responsiveFontSizes($small, $h2);
-        line-height: 4rem;
-    }
+	@include small {
+		font-size: responsiveFontSizes($small, $h2);
+		line-height: 4rem;
+	}
 }
 
-h3, h3 p {
-    font-size: $h3;
-    font-weight: 600;
-    line-height: 2.5rem;
-    letter-spacing: 0.1rem;
+h3,
+h3 p {
+	font-size: $h3;
+	font-weight: 600;
+	line-height: 2.5rem;
+	letter-spacing: 0.1rem;
 
-    @include small {
-        font-size: responsiveFontSizes($small, $h3);
-        line-height: 3rem;
-    }
+	@include small {
+		font-size: responsiveFontSizes($small, $h3);
+		line-height: 3rem;
+	}
 }
 
-h4, h4 p {
-    font-size: $h4;
-    font-weight: 500;
-    line-height: 3rem;
-    letter-spacing: 0.1rem;
+h4,
+h4 p {
+	font-size: $h4;
+	font-weight: 500;
+	line-height: 3rem;
+	letter-spacing: 0.1rem;
 
-    @include small {
-        font-size: responsiveFontSizes($small, $h4);
-        line-height: 3rem;
-    }
+	@include small {
+		font-size: responsiveFontSizes($small, $h4);
+		line-height: 3rem;
+	}
 }
 
 i.icon {
-    font-size: 4rem;
-    display: block;
-    padding: 1rem;
-    text-align: center;
-    color: $highlight;
+	font-size: 4rem;
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	color: $highlight;
 }
 
 p {
-    font-size: $body1;
-    font-weight: 500;
-    line-height: 2rem;
+	font-size: $body1;
+	font-weight: 500;
+	line-height: 2rem;
 }
 
 .button {
-    font-size: $h3;
-    padding: 1.5rem 3rem;
-    cursor: pointer;
-    transition: ease-in-out 0.3s;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    color: $white;
-    border: .2rem solid $highlightSoft;
-    background-color: $highlightSoft;
+	font-size: $h3;
+	padding: 1.5rem 3rem;
+	cursor: pointer;
+	transition: ease-in-out 0.3s;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	color: $white;
+	border: 0.2rem solid $highlightSoft;
+	background-color: $highlightSoft;
 
-    &:hover, &:active {
-        background-color: rgba(224, 65, 113, .85);
-    }
+	&:hover,
+	&:active {
+		background-color: rgba(224, 65, 113, 0.85);
+	}
 }
 
 .body1 {
-    font-size: $body1;
+	font-size: $body1;
 }
 
 .body2 {
-    font-size: $body2;
+	font-size: $body2;
 }
 
-.caption, .caption p {
-    font-size: $caption;
+.caption,
+.caption p {
+	font-size: $caption;
 }
 
 a {
-    color: inherit;
+	color: inherit;
 
-    &:hover {
-        color: $highlightSoft;
-    }
+	&:hover {
+		color: $highlightSoft;
+	}
 }

@@ -1,56 +1,56 @@
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 .header {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8rem;
-    transition: all 0.5s ease-out, background 1s ease-out;
-    transition-delay: 0.2s;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 8rem;
+	transition: all 0.5s ease-out, background 1s ease-out;
+	transition-delay: 0.2s;
 
-    &.scroll {
-        opacity: .9;
-        background-color: var(--header);
-    }
+	&.scroll {
+		opacity: 0.9;
+		background-color: var(--header);
+	}
 
-    @include small {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem 2rem;
-        background-color: transparent;
-    }
+	@include small {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem 2rem;
+		background-color: transparent;
+	}
 
-    .content {
-        padding: 0;
+	.content {
+		padding: 0;
 
-        @include small {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            height: 100%;
-        }
+		@include small {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			height: 100%;
+		}
 
-        a.logo-link {
-            height: 100%;
-            padding: 0;
-        }
+		a.logo-link {
+			height: 100%;
+			padding: 0;
+		}
 
-        .logo {
-            height: 100%;
-            width: auto;
+		.logo {
+			height: 100%;
+			width: auto;
 
-            path.logo-fill {
-                fill: $white;
-            }
+			path.logo-fill {
+				fill: $white;
+			}
 
-            @include narrow {
-                display: none;
-            }
-        }
-    }
+			@include narrow {
+				display: none;
+			}
+		}
+	}
 }

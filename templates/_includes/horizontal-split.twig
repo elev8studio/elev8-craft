@@ -1,13 +1,21 @@
 <div class="content">
-    <div class="horizontal-split-text">
-        <h1 class="horizontal-split-text__heading">{{ block.heading|raw }}</h1>
+	<div class="horizontal-split-text">
+		<h1 class="horizontal-split-text__heading">
+			{{ block.heading|raw }}
+		</h1>
 
-        <h2 class="horizontal-split-text__subheading">{{ block.subheading|raw }}</h2>
+		<h2 class="horizontal-split-text__subheading">
+			{{ block.subheading|raw }}
+		</h2>
 
-        <h3 class="horizontal-split-text__paragraph">{{ block.advancedText }}</h3>
-    </div>
+		<h3 class="horizontal-split-text__paragraph">
+			{{ block.advancedText }}
+		</h3>
+	</div>
 
-    <div class="horizontal-split-media">
-        <img class="horizontal-split-media__vector" src="{{ block.vector.one().getUrl() }}" alt="">
-    </div>
+	<div class="horizontal-split-media">
+		<img class="horizontal-split-media__vector"
+			src="{{ block.vector.one().getUrl() }}"
+			alt="" />
+	</div>
 </div>

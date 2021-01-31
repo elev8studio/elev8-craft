@@ -1,7 +1,11 @@
-window.addEventListener('DOMContentLoaded', function () {
-  const burger = document.querySelector('.burger-container')
-  burger.onclick = () => {
-    let header = document.querySelector('.header')
-    header.classList.toggle('navigation-open')
-  }
-})
+const Menu = () => {
+	window.addEventListener('DOMContentLoaded', () => {
+		const burger = document.querySelector('.burger-container')
+		burger.onclick = () => {
+			const header = document.querySelector('.header')
+			header.classList.toggle('navigation-open')
+		}
+	})
+}
+
+export default Menu

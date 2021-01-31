@@ -1,46 +1,48 @@
-{% import "_includes/macros" as macros %}
+{% import '_includes/macros' as macros %}
 
 {% set navigation = craft.app.globals.getSetByHandle('navigation').menu.all() %}
 
 <nav class="navigation">
+	<div class="navigation-top">
+		<div class="burger-container">
+			<div id="burger">
+				<div class="bar topBar"></div>
+				<div class="bar btmBar"></div>
+			</div>
+		</div>
 
-    <div class="navigation-top">
-        <div class="burger-container">
-            <div id="burger">
-                <div class="bar topBar"></div>
-                <div class="bar btmBar"></div>
-            </div>
-        </div>
+		{% set logo = craft.assets().filename('elev8studio-logo.svg').one() %}
+		<a class="logo-link" href="/" aria-label="Visit homepage">
+			{{
+				svg(logo, sanitize = false, namespace = false)|attr({
+					class: 'logo logo-mobile'
+				})
+			}}
+		</a>
+	</div>
 
-        {% set logo = craft.assets().filename('elev8studio-logo.svg').one() %}
-        <a class="logo-link" href="/" aria-label="Visit homepage">
-            {{ svg(logo, sanitize=false, namespace=false)|attr({
-                class: 'logo logo-mobile'
-            }) }}
-        </a>
-    </div>
+	<ul class="menu">
+		{% for block in navigation %}
+			<li class="menu-item">
+				{% set slug = block.navLink.getUrl()|substringAfterLast('/') %}
+				<a {{ block.navLink.getLinkAttributes() }}
+					class="{{ macros.is_active(slug) }}">
+					{{ block.navLink.getText() }}
+				</a>
+			</li>
+		{% endfor %}
+		<li class="toggle-container menu-item">
+			<input class="theme-togle"
+				type="checkbox"
+				name="theme-toggle"
+				id="theme-toggle" />
+			<label for="theme-toggle" class="theme-toggle"><span></span></label>
+		</li>
+	</ul>
 
-
-    <ul class="menu">
-        {% for block in navigation %}
-            <li class="menu-item">
-                {% set slug = block.navLink.getUrl()|substringAfterLast('/') %}
-                <a {{ block.navLink.getLinkAttributes() }} class="{{ macros.is_active(slug) }}">
-                    {{ block.navLink.getText() }}
-                </a>
-            </li>
-        {% endfor %}
-        <li class="toggle-container menu-item">
-            <input class="theme-togle" type="checkbox" name="theme-toggle" id="theme-toggle"/>
-            <label for="theme-toggle" class="theme-toggle"><span></span></label>
-        </li>
-    </ul>
-
-    {# <div class="toggle-container"> #}
-    {# <label> #}
-    {# <input class="toggle-input" type="checkbox" name="darkmode"/> #}
-    {# </label> #}
-    {# </div> #}
-
+	{# <div class="toggle-container"> #}
+	{# <label> #}
+	{# <input class="toggle-input" type="checkbox" name="darkmode"/> #}
+	{# </label> #}
+	{# </div> #}
 </nav>
-

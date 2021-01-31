@@ -1,43 +1,43 @@
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 .hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+	position: relative;
+	display: flex;
+	flex-direction: column;
 
-    &-background {
-        position: relative;
-        overflow: hidden;
-        flex-grow: 1;
-        height: 40vh;
-        background-color: $midnightNavy;
-        background-repeat: no-repeat;
-        background-position: unset;
-        background-size: cover;
-        filter: var(--filter);
+	&-background {
+		position: relative;
+		overflow: hidden;
+		flex-grow: 1;
+		height: 40vh;
+		background-color: $midnightNavy;
+		background-repeat: no-repeat;
+		background-position: unset;
+		background-size: cover;
+		filter: var(--filter);
 
-        @include small {
-            background-position: top center;
-            height: 50vh;
-        }
-    }
+		@include small {
+			background-position: top center;
+			height: 50vh;
+		}
+	}
 
-    h1 {
-        max-width: 70rem;
-        margin: auto;
-        text-align: center;
-        color: $black;
-    }
+	h1 {
+		max-width: 70rem;
+		margin: auto;
+		text-align: center;
+		color: $black;
+	}
 
-    h2 {
-        position: relative;
-        text-align: center;
-        color: $white;
-        background-color: $highlightSoft;
+	h2 {
+		position: relative;
+		text-align: center;
+		color: $white;
+		background-color: $highlightSoft;
 
-        @include narrow {
-            padding: 2rem;
-        }
-    }
+		@include narrow {
+			padding: 2rem;
+		}
+	}
 }

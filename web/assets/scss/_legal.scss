@@ -1,63 +1,69 @@
-@import "variables";
-@import "typography";
+@import 'variables';
+@import 'typography';
 
 .legal {
-    #iubenda_policy {
-        .simple_pp > ul > li > ul .iconed, .expand-click {
-            background: none;
-            padding-left: 0;
-        }
+	#iubenda_policy {
+		.simple_pp > ul > li > ul .iconed,
+		.expand-click {
+			background: none;
+			padding-left: 0;
+		}
 
-        .expand-click {
-            padding-left: 2rem !important;
-        }
+		.expand-click {
+			padding-left: 2rem !important;
+		}
 
-        .expand-content {
-            padding: 0 1rem .5rem !important;
-        }
+		.expand-content {
+			padding: 0 1rem 0.5rem !important;
+		}
 
-        .iub_content {
-            p, li {
-                font-family: 'Muli', sans-serif;
-                font-size: $body2;
-                line-height: 2.5rem;
-            }
+		.iub_content {
+			p,
+			li {
+				font-family: 'Muli', sans-serif;
+				font-size: $body2;
+				line-height: 2.5rem;
+			}
 
-            h1, h2 {
-                display: none;
-            }
+			h1,
+			h2 {
+				display: none;
+			}
 
-            h3 {
-                font-size: $h3;
-                padding: 1.5rem 0 1rem;
-            }
+			h3 {
+				font-size: $h3;
+				padding: 1.5rem 0 1rem;
+			}
 
-            ul:last-child li ul li h3 {
-                font-size: $body2;
-            }
+			ul:last-child li ul li h3 {
+				font-size: $body2;
+			}
 
-            h4 {
-                font-size: $h4;
-            }
+			h4 {
+				font-size: $h4;
+			}
 
-            div, p, h3, h4 {
-                font-family: 'Muli', sans-serif;
-                color: var(--text);
-            }
+			div,
+			p,
+			h3,
+			h4 {
+				font-family: 'Muli', sans-serif;
+				color: var(--text);
+			}
 
-            a {
-                text-decoration: none;
-                color: $highlightSoft;
-                border-bottom: none;
-            }
+			a {
+				text-decoration: none;
+				color: $highlightSoft;
+				border-bottom: none;
+			}
 
-            hr {
-                display: none;
-            }
+			hr {
+				display: none;
+			}
 
-            .box_primary {
-                background-color: var(--bg-alt);
-            }
-        }
-    }
+			.box_primary {
+				background-color: var(--bg-alt);
+			}
+		}
+	}
 }

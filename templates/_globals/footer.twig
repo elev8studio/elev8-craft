@@ -1,0 +1,35 @@
+<footer class="footer" id="footer">
+	<div class="content">
+		<div class="social-icons">
+			<a href="https://twitter.com/TheElev8Studio"
+				target="_blank"
+				aria-label="Twitter"
+				rel="noopener">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a href="https://github.com/elev8studio"
+				target="_blank"
+				aria-label="Github"
+				rel="noopener">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/jonathansmithies"
+				target="_blank"
+				aria-label="LinkedIn"
+				rel="noopener">
+				<i class="fab fa-linkedin-in"></i>
+			</a>
+			<a href="{{ 'mailto:help@elev8stud.io'|entities }}"
+				target="_blank"
+				aria-label="Email">
+				<i class="fas fa-envelope"></i>
+			</a>
+		</div>
+		{% set footer = craft.app.globals.getSetByHandle('footer') %}
+		<div class="copyright">
+			<p class="caption">
+				Copyright © {{ 'now'|date('Y') }} {{ footer.copyright }}
+			</p>
+		</div>
+	</div>
+</footer>

@@ -1,6 +1,9 @@
 {% if block['background'] and block.background.one() %}
-    {% set background = block.background.one().getUrl() %}
-    <div class="hero-background" style="background-image: url({{ background }})"></div>
+	{% set background = block.background.one().getUrl() %}
+	<div class="hero-background"
+		style="background-image: url({{ background }})"></div>
 {% endif %}
 
-<h2>{{ block.subheading }}</h2>
+<h2>
+	{{ block.subheading }}
+</h2>

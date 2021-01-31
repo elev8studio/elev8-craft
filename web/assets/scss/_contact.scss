@@ -1,123 +1,125 @@
-@import "variables";
-@import "typography";
+@import 'variables';
+@import 'typography';
 
 .form {
-    .content {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        padding: 5rem 3rem 8rem;
+	.content {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		padding: 5rem 3rem 8rem;
 
-        .form-success, .form-error {
-            display: none;
-        }
+		.form-success,
+		.form-error {
+			display: none;
+		}
 
-        .form__heading {
-            display: inline-block;
-            margin-bottom: 2rem;
-            padding-bottom: 0;
-            border-bottom: .2rem solid #ec2d5b;
-        }
+		.form__heading {
+			display: inline-block;
+			margin-bottom: 2rem;
+			padding-bottom: 0;
+			border-bottom: 0.2rem solid #ec2d5b;
+		}
 
-        .form__subheading {
-            padding-top: 3rem;
-            text-align: center;
-        }
+		.form__subheading {
+			padding-top: 3rem;
+			text-align: center;
+		}
 
-        .input {
-            font-size: $h4;
-            display: block;
-            margin: 1rem 0 2rem;
-            padding: 1rem;
-            border-width: 0;
-            border-bottom: 2px solid rgba(236, 45, 91, .35);
-            outline: none;
-            border-radius: 0;
-            transition: all .3s;
-            width: 100%;
-            line-height: 2.5rem;
-            background-color: var(--input);
+		.input {
+			font-size: $h4;
+			display: block;
+			margin: 1rem 0 2rem;
+			padding: 1rem;
+			border-width: 0;
+			border-bottom: 2px solid rgba(236, 45, 91, 0.35);
+			outline: none;
+			border-radius: 0;
+			transition: all 0.3s;
+			width: 100%;
+			line-height: 2.5rem;
+			background-color: var(--input);
 
-            &:focus {
-                border-bottom: 2px solid $highlightSoft;
-            }
-        }
+			&:focus {
+				border-bottom: 2px solid $highlightSoft;
+			}
+		}
 
-        .contact-form {
-            width: 100%;
-            padding-top: 3rem;
+		.contact-form {
+			width: 100%;
+			padding-top: 3rem;
 
+			@include wide {
+				width: 80%;
+			}
 
-            @include wide {
-                width: 80%;
-            }
+			.form-group {
+				display: flex;
+				justify-content: space-around;
+				flex-direction: column;
+				margin: auto;
+				width: 100%;
 
-            .form-group {
-                display: flex;
-                justify-content: space-around;
-                flex-direction: column;
-                margin: auto;
-                width: 100%;
+				@include small {
+					grid-gap: 5rem;
+					flex-direction: row;
+				}
+			}
 
-                @include small {
-                    grid-gap: 5rem;
-                    flex-direction: row;
-                }
-            }
+			&__name,
+			&__email,
+			&__subject,
+			&__message {
+				margin: 1rem 0 2rem;
+				flex-grow: 1;
 
-            &__name, &__email, &__subject, &__message {
-                margin: 1rem 0 2rem;
-                flex-grow: 1;
+				@include wide {
+					margin: 1rem 2rem 0;
+				}
 
-                @include wide {
-                    margin: 1rem 2rem 0;
-                }
+				input {
+					@extend .input;
+				}
+			}
 
-                input {
-                    @extend .input;
-                }
-            }
+			&__message {
+				flex-grow: 1;
 
-            &__message {
-                flex-grow: 1;
+				textarea {
+					@extend .input;
+					resize: none;
+				}
+			}
 
-                textarea {
-                    @extend .input;
-                    resize: none;
-                }
+			label {
+				font-size: $h4;
+			}
 
-            }
+			&__send {
+				display: flex;
+				justify-content: center;
+				padding-top: 3rem;
 
-            label {
-                font-size: $h4;
-            }
+				input {
+					&:focus {
+						outline: none;
+					}
+				}
+			}
 
-            &__send {
-                display: flex;
-                justify-content: center;
-                padding-top: 3rem;
+			.form-messages {
+				text-align: center;
 
-                input {
-                    &:focus {
-                        outline: none;
-                    }
-                }
-            }
+				.form-success {
+					background-color: $mint;
+					padding: 1rem 2rem;
+				}
 
-            .form-messages {
-                text-align: center;
-
-                .form-success {
-                    background-color: $mint;
-                    padding: 1rem 2rem;
-                }
-
-                .form-error {
-                    background-color: $grey;
-                    padding: 1rem 2rem;
-                }
-            }
-        }
-    }
+				.form-error {
+					background-color: $grey;
+					padding: 1rem 2rem;
+				}
+			}
+		}
+	}
 }

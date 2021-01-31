@@ -1,0 +1,36 @@
+<head>
+	{% hook 'seo' %}
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="referrer" content="origin-when-cross-origin" />
+	{% do view.registerCssFile('@web/assets/css/normalize.css') %}
+	{% do view.registerCssFile('@web/assets/dist/css/style.min.css') %}
+	{% do view.registerCssFile(
+		'https://use.fontawesome.com/releases/v5.14.0/css/all.css'
+	) %}
+	{% do view.registerCssFile('https://use.typekit.net/qnh6wky.css') %}
+	{% do view.registerJsFile('@web/assets/dist/js/app.min.js') %}
+	<link rel="apple-touch-icon"
+		sizes="180x180"
+		href="{{ alias('@web/apple-touch-icon.png') }}" />
+	<link rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="{{ alias('@web/favicon-32x32.png') }}" />
+	<link rel="icon"
+		type="image/png"
+		sizes="16x16"
+		href="{{ alias('@web/favicon-16x16.png') }}" />
+	<meta name="theme-color" content="#ffffff" />
+
+	{% include '_globals/google-head-script' %}
+
+	{% include '_includes/iubenda' %}
+
+	{# jQuery #}
+	{# <script src="https://code.jquery.com/jquery-3.5.1.min.js" #}
+	{# integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" #}
+	{# crossorigin="anonymous"></script> #}
+	{# End jQuery #}
+</head>

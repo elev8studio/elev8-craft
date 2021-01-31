@@ -1,87 +1,87 @@
-@import "variables";
-@import "mixins";
-@import "typography";
+@import 'variables';
+@import 'mixins';
+@import 'typography';
 
 .horizontal-split {
-    $cache: &;
+	$cache: &;
 
-    &:nth-of-type(2n) {
-        .content {
-            @include small {
-                .horizontal-split-text {
-                    padding-right: 5rem;
-                }
-            }
-        }
-    }
+	&:nth-of-type(2n) {
+		.content {
+			@include small {
+				.horizontal-split-text {
+					padding-right: 5rem;
+				}
+			}
+		}
+	}
 
-    &:nth-of-type(2n+1) {
-        .content {
-            flex-direction: column-reverse;
+	&:nth-of-type(2n + 1) {
+		.content {
+			flex-direction: column-reverse;
 
-            @include small {
-                flex-direction: row-reverse;
+			@include small {
+				flex-direction: row-reverse;
 
-                .horizontal-split-text {
-                    padding-left: 5rem;
-                }
-            }
-        }
-    }
+				.horizontal-split-text {
+					padding-left: 5rem;
+				}
+			}
+		}
+	}
 
-    .content {
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
-        max-width: $wide;
-        padding: 5rem 3rem;
+	.content {
+		display: flex;
+		align-items: center;
+		flex-direction: column-reverse;
+		max-width: $wide;
+		padding: 5rem 3rem;
 
-        @include small {
-            flex-direction: row;
-        }
-    }
+		@include small {
+			flex-direction: row;
+		}
+	}
 
-    &-text {
-        text-align: center;
+	&-text {
+		text-align: center;
 
-        @include small {
-            text-align: left;
-            width: 50%;
-            padding-bottom: 2rem;
-        }
+		@include small {
+			text-align: left;
+			width: 50%;
+			padding-bottom: 2rem;
+		}
 
-        &__heading {
-            display: inline-block;
-            margin-bottom: 2rem;
-            padding-bottom: 0;
-            border-bottom: .2rem solid $highlight;
-        }
+		&__heading {
+			display: inline-block;
+			margin-bottom: 2rem;
+			padding-bottom: 0;
+			border-bottom: 0.2rem solid $highlight;
+		}
 
-        &__subheading {
-            em {
-                display: block;
-                color: $highlight;
-                @extend h3;
-            }
-        }
+		&__subheading {
+			em {
+				display: block;
+				color: $highlight;
+				@extend h3;
+			}
+		}
 
-        &__paragraph {
-            color: $highlight;
-        }
-    }
+		&__paragraph {
+			color: $highlight;
+		}
+	}
 
-    &-media {
-        flex-grow: 1;
-        width: 100%;
-        padding: 2rem 0;
+	&-media {
+		flex-grow: 1;
+		width: 100%;
+		padding: 2rem 0;
 
-        @include small {
-            width: auto;
-            padding: 5rem;
-        }
+		@include small {
+			width: auto;
+			padding: 5rem;
+		}
 
-        &__vector {
-            background-color: transparent;
-        }
-    }
+		&__vector {
+			background-color: transparent;
+		}
+	}
 }

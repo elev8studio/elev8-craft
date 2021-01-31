@@ -1,6 +1,8 @@
-{% extends "_layout" %}
-
-{# Display the content for this page - in the main element #}
-{% block content %}
-    {% include "_blocks" with { entry: entry } %}
-{% endblock %}
+{% embed '_layout' %}
+	{% block content %}
+		{# Display the content for this page - in the main element #}
+		{% include '_blocks' with {
+			entry: entry
+		} %}
+	{% endblock %}
+{% endembed %}

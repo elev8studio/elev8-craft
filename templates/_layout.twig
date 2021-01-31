@@ -1,29 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ craft.app.language }}">
+	{% import '_helpers/macros' as macros %}
 
-    {% import "_includes/macros" as macros %}
+	{% set seo = getSeoField() %}
 
-    {% set seo = getSeoField() %}
+	{% include '_globals/head' %}
 
-    {% include "_includes/head" %}
+	<body id="body" class="elev8 {{ entry.bodyClass|default('') }}">
+		{% include '_globals/google-body-script' %}
 
-    <body id="body" class="elev8 {{ entry.bodyClass|default('') }}">
+		{% include '_globals/header' %}
 
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF4BKF3"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
+		<main id="container">
+			{% block content %}
 
-        {% include "_includes/header" %}
+			{% endblock %}
+		</main>
 
-        <main id="container">
-
-            {% block content %}{% endblock %}
-
-        </main>
-
-        {% include "_includes/footer" %}
-
-    </body>
-
+		{% include '_globals/footer' %}
+	</body>
 </html>

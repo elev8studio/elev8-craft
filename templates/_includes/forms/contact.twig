@@ -1,111 +1,112 @@
 {% macro errorList(errors) %}
-    {% if errors %}
-        <ul class="errors">
-            {% for error in errors %}
-                <li>{{ error }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
+	{% if errors %}
+		<ul class="errors">
+			{% for error in errors %}
+				<li>{{ error }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
 {% endmacro %}
 
-        {% from _self import errorList %}
+{% from _self import errorList %}
 
 <form class="contact-form"
-      id="contact-form"
-      method="post"
-      action=""
-      accept-charset="UTF-8">
+	id="contact-form"
+	method="post"
+	action=""
+	accept-charset="UTF-8">
+	{{ csrfInput() }}
 
-    {{ csrfInput() }}
+	<input type="hidden" name="action" value="contact-form/send" />
 
-    <input type="hidden" name="action" value="contact-form/send">
+	<div class="form-group">
+		<div class="contact-form__name">
+			<label for="fromName" class="contact-form__label">Name</label>
+			<input class="contact-form__input"
+				id="fromName"
+				type="text"
+				name="fromName"
+				placeholder="e.g. Mike Smith"
+				value="{{ message.fromName|default('') }}"
+				required />
+			{{ message is defined and message
+				? errorList(message.getErrors('fromName')) }}
+		</div>
 
-    <div class="form-group">
-        <div class="contact-form__name">
-            <label for="fromName" class="contact-form__label">Name</label>
-            <input class="contact-form__input"
-                   id="fromName"
-                   type="text"
-                   name="fromName"
-                   placeholder="e.g. Mike Smith"
-                   value="{{ message.fromName|default('') }}"
-                   required/>
-            {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
-        </div>
+		<div class="contact-form__email">
+			<label for="fromEmail" class="contact-form__label">Email</label>
+			<input class="contact-form__input"
+				id="fromEmail"
+				type="email"
+				name="fromEmail"
+				placeholder="e.g. mike@smith.com"
+				value="{{ message.fromEmail|default('') }}"
+				required />
+			{{ message is defined and message
+				? errorList(message.getErrors('fromEmail')) }}
+		</div>
+	</div>
 
-        <div class="contact-form__email">
-            <label for="fromEmail" class="contact-form__label">Email</label>
-            <input class="contact-form__input"
-                   id="fromEmail"
-                   type="email"
-                   name="fromEmail"
-                   placeholder="e.g. mike@smith.com"
-                   value="{{ message.fromEmail|default('') }}"
-                   required/>
-            {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
-        </div>
-    </div>
+	<div class="form-group">
+		<div class="contact-form__subject">
+			<label for="subject" class="contact-form__label">Subject</label>
+			<input class="contact-form__input"
+				id="subject"
+				type="text"
+				name="subject"
+				placeholder="e.g. New website project"
+				value="{{ message.subject|default('') }}"
+				required />
+			{{ message is defined and message
+				? errorList(message.getErrors('subject')) }}
+		</div>
+	</div>
 
-    <div class="form-group">
-        <div class="contact-form__subject">
-            <label for="subject" class="contact-form__label">Subject</label>
-            <input class="contact-form__input"
-                   id="subject"
-                   type="text"
-                   name="subject"
-                   placeholder="e.g. New website project"
-                   value="{{ message.subject|default('') }}"
-                   required/>
-            {{ message is defined and message ? errorList(message.getErrors('subject')) }}
-        </div>
-    </div>
+	<div class="form-group">
+		<div class="contact-form__message">
+			<label for="message" class="contact-form__label">Message</label>
+			<textarea class="contact-form__input"
+				rows="5"
+				id="message"
+				name="message"
+				placeholder="Type your message here"
+				required>
+				{{ message.message|default('') }}
+			</textarea>
+			{{ message is defined and message
+				? errorList(message.getErrors('message')) }}
+		</div>
+	</div>
 
-    <div class="form-group">
-        <div class="contact-form__message">
-            <label for="message" class="contact-form__label">Message</label>
-            <textarea class="contact-form__input"
-                      rows="5"
-                      id="message"
-                      name="message"
-                      placeholder="Type your message here"
-                      required>{{ message.message|default('') }}</textarea>
-            {{ message is defined and message ? errorList(message.getErrors('message')) }}
-        </div>
-    </div>
+	<div>
+		<label for="form-validate"></label>
+		<input id="form-validate"
+			name="form-validate"
+			type="text"
+			style="display: none" />
+	</div>
 
-    <div>
-        <label for="form-validate"></label>
-        <input id="form-validate" name="form-validate" type="text" style="display: none"/>
-    </div>
+	<p class="form-messages">
+		<span class="form-success body2" id="message-success">
+			Thanks. We'll be in touch.
+		</span>
+		<span class="form-error body2" id="message-error">
+			Something went wrong, please try again.
+		</span>
+	</p>
 
-    <p class="form-messages">
-        <span class="form-success body2" id="message-success">Thanks. We'll be in touch.</span>
-        <span class="form-error body2" id="message-error">Something went wrong, please try again.</span>
-    </p>
-
-    <div class="contact-form__send">
-        <input class="button" type="submit" value="Send"/>
-    </div>
+	<div class="contact-form__send">
+		<input class="button" type="submit" value="Send" />
+	</div>
 </form>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  $('#contact-form').submit(function (e) {
-    e.preventDefault()
+	document.addEventListener('DOMContentLoaded', () => {
+	$('#contact-form').submit(function (e) { e.preventDefault()
 
-    $.post({
-      url: window.location.href,
-      dataType: 'json',
-      data: $(this).serialize(),
-      success: function (response) {
-        if (response.success) {
-          $('#message-success').fadeIn().delay(2000).fadeOut()
-          $('#contact-form').trigger('reset')
-        } else {
-          $('#message-error').fadeIn().delay(10000).fadeOut()
-        }
-      },
-    })
-  })
-})
+	$.post({ url: window.location.href, dataType: 'json', data:
+	$(this).serialize(), success: function (response) { if (response.success) {
+	$('#message-success').fadeIn().delay(2000).fadeOut()
+	$('#contact-form').trigger('reset') } else {
+	$('#message-error').fadeIn().delay(10000).fadeOut() } }, }) }) })
 </script>
