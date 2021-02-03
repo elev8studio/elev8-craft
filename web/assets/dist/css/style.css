@@ -23131,7 +23131,8 @@ html.dark {
   --input: #aaaaaa;
 }
 
-html, body {
+html,
+body {
   scroll-padding-top: 8rem;
 }
 
