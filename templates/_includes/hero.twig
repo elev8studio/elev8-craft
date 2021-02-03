@@ -1,7 +1,7 @@
 <div class="relative w-full">
     {% if block['background'] and block.background.one() %}
         {% set background = block.background.one().getUrl() %}
-        <div class="relative h-screen-40 overflow-hidden flex-grow bg-no-repeat bg-cover md:bg-top inset-0"
+        <div class="relative h-screen-40 overflow-hidden flex-grow bg-no-repeat bg-cover md:bg-top inset-0 max-w-screen-xl"
             style="background-image: url({{ background }})"></div>
     {% endif %}
 

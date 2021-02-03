@@ -2,79 +2,80 @@
 @import 'mixins';
 
 html {
-	font-size: $htmlBaseFontSize;
-	scroll-behavior: smooth;
+  font-size: $htmlBaseFontSize;
+  scroll-behavior: smooth;
 
-	// Theme variables
-	--bg: #{$white};
-	--bg-alt: #{$light};
-	--text: #{$black};
-	--text-highlight: #{$highlight};
-	--filter: saturate(1);
-	--header: #{$midnightNavy};
-	--footer: #{$darkNavy};
-	--input: #{$white};
+  // Theme variables
+  --bg: #{$white};
+  --bg-alt: #{$light};
+  --text: #{$black};
+  --text-highlight: #{$highlight};
+  --filter: saturate(1);
+  --header: #{$midnightNavy};
+  --footer: #{$darkNavy};
+  --input: #{$white};
 }
 
 html.dark {
-	// Theme variables
-	--bg: #282828;
-	--bg-alt: #{$darkGrey};
-	--text: #{$light};
-	--text-highlight: #{$highlight};
-	--filter: saturate(0.9);
-	--header: #151515;
-	--footer: #151515;
-	--input: #{$grey};
+  // Theme variables
+  --bg: #282828;
+  --bg-alt: #{$darkGrey};
+  --text: #{$light};
+  --text-highlight: #{$highlight};
+  --filter: saturate(0.9);
+  --header: #151515;
+  --footer: #151515;
+  --input: #{$grey};
 }
 
-html, body {
-	scroll-padding-top: 8rem;
+html,
+body {
+  scroll-padding-top: 8rem;
 }
 
 * {
-	@apply box-border;
+  @apply box-border;
 }
 
 main {
-	display: flex;
-	overflow: hidden;
-	align-items: center;
-	flex-direction: column;
-	min-height: 75vh;
-	filter: var(--filter);
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  min-height: 75vh;
+  filter: var(--filter);
 
-	section {
-		width: 100%;
-		padding: 0;
-		transition: all 0.5s;
+  section {
+    width: 100%;
+    padding: 0;
+    transition: all 0.5s;
 
-		&:nth-of-type(2n) {
-			background-color: var(--bg);
-		}
+    &:nth-of-type(2n) {
+      background-color: var(--bg);
+    }
 
-		&:nth-of-type(2n + 1) {
-			background-color: var(--bg-alt);
-		}
-	}
+    &:nth-of-type(2n + 1) {
+      background-color: var(--bg-alt);
+    }
+  }
 }
 
 .content {
-	@apply relative flex items-center flex-col md:flex-row p-20 overflow-hidden w-full h-full;
+  @apply relative flex items-center flex-col md:flex-row p-20 overflow-hidden w-full h-full max-w-screen-xl;
 
-	&--col {
-		@apply md:flex-col;
+  &--col {
+    @apply md:flex-col;
 
-		&-reverse {
-			@apply flex-col-reverse flex md:items-start lg:items-center;
-		}
-	}
+    &-reverse {
+      @apply flex-col-reverse flex md:items-start lg:items-center;
+    }
+  }
 }
 
 img {
-	pointer-events: none;
+  pointer-events: none;
 }
 
 input {
-	overflow: visible;
+  overflow: visible;
 }

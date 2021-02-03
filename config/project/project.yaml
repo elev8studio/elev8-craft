@@ -1,4 +1,4 @@
-dateModified: 1612269086
+dateModified: 1612313167
 email:
   fromEmail: help@elev8stud.io
   fromName: $SITE_NAME
@@ -78,13 +78,11 @@ plugins:
       socialImage:
         - '630'
       title:
-        - __assoc__:
-            - - key
-              - '2'
-            - - locked
-              - '1'
-            - - template
-              - '{{ siteName }} | {title}'
+        -
+          __assoc__:
+            - '- key - ''2'''
+            - '- locked - ''1'''
+            - '- template - ''{{ siteName }} | {title}'''
       titleSuffix: null
       twitterHandle: TheElev8Studio
   sprout-encode-email:
