@@ -4,28 +4,6 @@
 html {
   font-size: $htmlBaseFontSize;
   scroll-behavior: smooth;
-
-  // Theme variables
-  --bg: #{$white};
-  --bg-alt: #{$light};
-  --text: #{$black};
-  --text-highlight: #{$highlight};
-  --filter: saturate(1);
-  --header: #{$midnightNavy};
-  --footer: #{$darkNavy};
-  --input: #{$white};
-}
-
-html.dark {
-  // Theme variables
-  --bg: #282828;
-  --bg-alt: #{$darkGrey};
-  --text: #{$light};
-  --text-highlight: #{$highlight};
-  --filter: saturate(0.9);
-  --header: #151515;
-  --footer: #151515;
-  --input: #{$grey};
 }
 
 html,
@@ -51,11 +29,11 @@ main {
     transition: all 0.5s;
 
     &:nth-of-type(2n) {
-      background-color: var(--bg);
+      @apply bg-white dark:bg-darker;
     }
 
     &:nth-of-type(2n + 1) {
-      background-color: var(--bg-alt);
+      @apply bg-cream dark:bg-dark;
     }
   }
 }

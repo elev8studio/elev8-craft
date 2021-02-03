@@ -59,6 +59,7 @@
         </div>
     </div>
 
+    <!-- prettier-ignore-start -->
     <div class="flex justify-around flex-col m-auto w-full sm:col-20 flex-row">
         <div class="mt-4 mx-0 mb-8 flex-grow xl:mx-8 xl:mb-0">
             <label for="message" class="h4">Message</label>
@@ -66,13 +67,12 @@
                 rows="5"
                 id="message"
                 name="message"
-                required>
-                {{ message.message|default('') }}
-            </textarea>
+                required>{{ message.message|default('') }}</textarea>
             {{ message is defined and message
                 ? errorList(message.getErrors('message')) }}
         </div>
     </div>
+    <!-- prettier-ignore-end -->
 
     <div>
         <label for="form-validate"></label>
@@ -83,7 +83,7 @@
     </div>
 
     <p class="text-center">
-        <span class="hidden body bg-mint py-4 px-8" id="message-success">
+        <span class="hidden body bg-mint text-white py-4 px-8" id="message-success">
             Thanks. We'll be in touch.
         </span>
         <span class="hidden body bg-grey py-4 px-8" id="message-error">
