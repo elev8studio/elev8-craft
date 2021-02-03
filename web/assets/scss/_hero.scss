@@ -1,28 +1,10 @@
 @import 'variables';
 @import 'mixins';
 
-.hero {
-	@apply relative flex flex-col;
+.hero-height {
+    height: 40vh;
 
-	&-background {
-		height: 40vh;
-		background-color: $midnightNavy;
-		filter: var(--filter);
-
-		@apply relative overflow-hidden flex-grow bg-no-repeat bg-cover md:bg-top;
-
-		@screen sm {
-			height: 50vh;
-		}
-	}
-
-	h1 {
-		max-width: 70rem;
-
-		@apply m-auto text-center text-black;
-	}
-
-	h2 {
-		@apply relative text-center text-white bg-highlightSoft p-8 sm:p-0;
-	}
+    @screen sm {
+        height: 50vh;
+    }
 }

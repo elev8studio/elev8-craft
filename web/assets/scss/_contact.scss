@@ -19,9 +19,9 @@
 		}
 
 		.input {
-			@apply block mt-4 mx-0 mb-8 p-4 border-0 border-b-2 outline-none leading-10 w-full transition-all duration-300 rounded-none focus:border-highlightSoft;
+			@apply block mt-4 mx-0 mb-8 p-4 border-0 border-b-2 outline-none leading-10 w-full transition-all duration-300 rounded-none focus:border-highlight;
 
-			font-size: $h4;
+			//font-size: $h4;
 			border-color: rgba(236, 45, 91, 0.35);
 			background-color: var(--input);
 		}
@@ -55,7 +55,7 @@
 			}
 
 			label {
-				font-size: $h4;
+				//font-size: $h4;
 			}
 
 			&__send {

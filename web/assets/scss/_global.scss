@@ -1,11 +1,39 @@
 @import 'variables';
 @import 'mixins';
 
-hr {
-	height: 1px;
-	margin: 2.5rem 0;
-	border: 0;
-	background: #ccc;
+html {
+	font-size: $htmlBaseFontSize;
+	scroll-behavior: smooth;
+
+	// Theme variables
+	--bg: #{$white};
+	--bg-alt: #{$light};
+	--text: #{$black};
+	--text-highlight: #{$highlight};
+	--filter: saturate(1);
+	--header: #{$midnightNavy};
+	--footer: #{$darkNavy};
+	--input: #{$white};
+}
+
+html.dark {
+	// Theme variables
+	--bg: #282828;
+	--bg-alt: #{$darkGrey};
+	--text: #{$light};
+	--text-highlight: #{$highlight};
+	--filter: saturate(0.9);
+	--header: #151515;
+	--footer: #151515;
+	--input: #{$grey};
+}
+
+html, body {
+	scroll-padding-top: 8rem;
+}
+
+* {
+	@apply box-border;
 }
 
 main {
@@ -32,10 +60,15 @@ main {
 }
 
 .content {
-	overflow: hidden;
-	max-width: $wide;
-	margin: auto;
-	padding: 1rem 2.5rem;
+	@apply relative flex items-center flex-col md:flex-row p-20 overflow-hidden w-full h-full;
+
+	&--col {
+		@apply md:flex-col;
+
+		&-reverse {
+			@apply flex-col-reverse flex md:items-start lg:items-center;
+		}
+	}
 }
 
 img {

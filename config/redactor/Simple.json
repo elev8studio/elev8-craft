@@ -1,4 +1,6 @@
 {
   "buttons": ["bold", "italic"],
-  "toolbarFixed": true
+  "toolbarFixed": true,
+  "paragraphize": true,
+  "breakline": true
 }

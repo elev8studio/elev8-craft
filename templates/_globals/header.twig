@@ -1,15 +1,18 @@
-<header class="header" id="header">
-	<div class="content">
-		{% set logo = craft.assets().filename('elev8studio-logo.svg').one() %}
+<header class="header z-10 top-0 left-0 w-full h-32 md:flex md:items-center md:justify-center md:py-4"
+    id="header">
+    <div class="relative flex items-center flex-col md:flex-row px-6 md:px-20 py-0 overflow-hidden w-full h-full md:justify-between md:w-full">
+        {% set logo = craft.assets().filename('elev8studio-logo.svg').one() %}
 
-		<a class="logo-link" href="/" aria-label="Visit homepage">
-			{{
-				svg(logo, sanitize = false, namespace = false)|attr({
-					class: 'logo'
-				})
-			}}
-		</a>
+        <a class="h-full p-0 hidden md:block"
+            href="/"
+            aria-label="Visit homepage">
+            {{
+                svg(logo, sanitize = false, namespace = false)|attr({
+                    class: 'logo h-full w-auto'
+                })
+            }}
+        </a>
 
-		{% include '_includes/navigation' %}
-	</div>
+        {% include '_includes/navigation' %}
+    </div>
 </header>

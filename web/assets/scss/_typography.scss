@@ -1,130 +1,84 @@
 @import 'mixins';
-@import 'functions';
 @import 'variables';
 
-h1,
-h2,
-h3,
-h4,
-p,
-i,
-a,
-li,
-td {
-	margin: 0;
-	padding: 0.5rem 0;
+h1, h2, h3, h4, p, i, a, li, td {
+    @apply m-0 py-2 px-0;
 }
 
-$h1: 3rem;
-$h2: 2.5rem;
-$h3: 2rem;
-$h4: 1.8rem;
-$body1: 1.8rem;
-$body2: 1.6rem;
-$button: 1.8rem;
-$caption: 1.4rem;
-$quote: 2.5rem;
+.h1, h1 {
+    @include calc-fluid(font-size, 3rem, 4rem);
+    @include calc-fluid(line-height, 4rem, 5rem);
 
-h1 {
-	font-size: $h1;
-	font-weight: 700;
-	line-height: 5rem;
-	padding: 1rem 0;
-	letter-spacing: 0.1rem;
-
-	@include small {
-		font-size: responsiveFontSizes($small, $h1);
-		line-height: 7rem;
-	}
+    @apply font-bold tracking-wide dark:text-white;
 }
 
-h2 {
-	font-size: $h2;
-	font-weight: 600;
-	line-height: 3.5rem;
-	padding: 2rem 0 2.2rem;
-	letter-spacing: 0.1rem;
+.h2, h2 {
+    @include calc-fluid(font-size, 2.5rem, 3rem);
+    @include calc-fluid(line-height, 3.5rem, 4rem);
 
-	@include small {
-		font-size: responsiveFontSizes($small, $h2);
-		line-height: 4rem;
-	}
+    @apply font-bold tracking-wide dark:text-white;
 }
 
-h3,
-h3 p {
-	font-size: $h3;
-	font-weight: 600;
-	line-height: 2.5rem;
-	letter-spacing: 0.1rem;
+.h3, h3 {
+    @include calc-fluid(font-size, 2rem, 2.5rem);
+    @include calc-fluid(line-height, 3rem, 3.5rem);
 
-	@include small {
-		font-size: responsiveFontSizes($small, $h3);
-		line-height: 3rem;
-	}
+    @apply font-bold text-highlight tracking-normal;
 }
 
-h4,
-h4 p {
-	font-size: $h4;
-	font-weight: 500;
-	line-height: 3rem;
-	letter-spacing: 0.1rem;
+.h4, h4 {
+    @include calc-fluid(font-size, 1.8rem, 2.3rem);
+    @include calc-fluid(line-height, 2.8rem, 3.3rem);
 
-	@include small {
-		font-size: responsiveFontSizes($small, $h4);
-		line-height: 3rem;
-	}
+    @apply font-semibold dark:text-highlight tracking-wide;
 }
 
 i.icon {
-	font-size: 4rem;
-	display: block;
-	padding: 1rem;
-	text-align: center;
-	color: $highlight;
+    font-size: 3rem;
 }
 
-p {
-	font-size: $body1;
-	font-weight: 500;
-	line-height: 2rem;
+.h3, h3 {
+    @include calc-fluid(font-size, 2rem, 2.5rem);
+    @include calc-fluid(line-height, 3rem, 3.5rem);
+
+    @apply font-semibold text-highlight tracking-normal;
+}
+
+.h4, h4 {
+    @include calc-fluid(font-size, 1.8rem, 2.3rem);
+    @include calc-fluid(line-height, 2.8rem, 3.3rem);
+
+    @apply font-medium dark:text-highlight tracking-normal;
+}
+
+i.icon {
+    font-size: 3rem;
+
+
+    @apply block p-4 text-center text-white hover:text-highlight ease-in-out duration-300;
+}
+
+.body, p, li {
+    @include calc-fluid(font-size, 1.8rem, 2.3rem);
+    @include calc-fluid(line-height, 2.8rem, 3.3rem);
+
+    @apply font-medium dark:text-white;
 }
 
 .button {
-	font-size: $h3;
-	padding: 1.5rem 3rem;
-	cursor: pointer;
-	transition: ease-in-out 0.3s;
-	letter-spacing: 0.1rem;
-	text-transform: uppercase;
-	color: $white;
-	border: 0.2rem solid $highlightSoft;
-	background-color: $highlightSoft;
+    @include calc-fluid(font-size, 2rem, 2.5rem);
 
-	&:hover,
-	&:active {
-		background-color: rgba(224, 65, 113, 0.85);
-	}
+    @apply py-6 px-12 cursor-pointer ease-in-out duration-300 bg-highlight border-2 border-highlight uppercase tracking-wider text-white hover:bg-opacity-80;
 }
 
-.body1 {
-	font-size: $body1;
-}
-
-.body2 {
-	font-size: $body2;
-}
-
-.caption,
-.caption p {
-	font-size: $caption;
+.caption {
+    @include calc-fluid(font-size, 1.2rem, 1.7rem);
 }
 
 a {
-	color: inherit;
+    @apply text-black dark:text-white hover:text-highlight ease-in-out duration-300;
+}
 
-	&:hover {
-		color: $highlightSoft;
-	}
+.input {
+    @apply h4 block mt-4 mx-0 mb-8 p-4 border-0 border-b-2 outline-none leading-10 w-full transition-all duration-300 rounded-none focus:border-highlight border-highlight border-opacity-40 bg-white dark:bg-grey;
 }

@@ -1,7 +1,7 @@
-import DarkMode from './darkmode'
-import Header from './header'
-import Menu from './menu'
+import Theme from "./Theme";
+import Header from "./Header";
+import Menu from "./Menu";
 
-DarkMode()
-Header()
-Menu()
+Theme();
+Header();
+Menu();

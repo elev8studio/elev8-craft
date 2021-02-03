@@ -2,55 +2,39 @@
 @import 'mixins';
 
 .header {
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 8rem;
 	transition: all 0.5s ease-out, background 1s ease-out;
-	transition-delay: 0.2s;
 
-	&.scroll {
-		opacity: 0.9;
-		background-color: var(--header);
+	@apply absolute delay-200;
+
+	path.logo-fill {
+		fill: $white;
 	}
 
-	@include small {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 1rem 2rem;
-		background-color: transparent;
+	&--slide-down {
+		&.header--top {
+			@apply fixed;
+		}
+
+		&.header--not-top {
+			@apply transform translate-y-0;
+		}
 	}
 
-	.content {
-		padding: 0;
-
-		@include small {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			width: 100%;
-			height: 100%;
+	&--slide-up {
+		&.header--top {
+			@apply absolute -translate-y-full;
 		}
 
-		a.logo-link {
-			height: 100%;
-			padding: 0;
+		&.header--not-top {
+			@apply transform -translate-y-full;
 		}
+	}
 
-		.logo {
-			height: 100%;
-			width: auto;
+	&--top {
+		@apply transform translate-y-0 bg-transparent;
+	}
 
-			path.logo-fill {
-				fill: $white;
-			}
-
-			@include narrow {
-				display: none;
-			}
-		}
+	&--not-top {
+		@apply fixed transform -translate-y-full bg-midnight dark:bg-darker bg-opacity-90;
 	}
 }

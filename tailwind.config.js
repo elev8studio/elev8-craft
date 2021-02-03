@@ -1,37 +1,37 @@
 module.exports = {
-	purge: ['./templates/**/*.twig'],
-	darkMode: false, // or 'media' or 'class'
-	theme: {
-		screens: {
-			sm: '650px',
-			md: '768px',
-			lg: '960px',
-			xl: '1280px',
-			'2xl': '1536px',
-		},
-		colors: {
-			black: '#111111',
-			white: '#ffffff',
-			highlight: '#ec2d5b',
-			highlightSoft: '#e04171',
-			darkGrey: '#222222',
-			grey: '#aaaaaa',
-			lightGrey: '#eeeeee',
-			navy: '#0f3d73',
-			darkNavy: '#292752',
-			midnightNavy: '#15134f',
-			slate: '#708090',
-			light: '#f7f7f7',
-			mint: '#41e0a5',
-		},
-		fontFamily: {
-			sans: ['Montserrat', 'sans-serif'],
-			serif: ['PlayfairDisplay', 'serif'],
-		},
-		extend: {},
-	},
-	variants: {
-		extend: {},
-	},
-	plugins: [],
+  purge: ['./templates/**/*.twig'],
+  darkMode: 'class', // or 'media' or 'class'
+  theme: {
+    screens: {
+      sm: '450px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
+    colors: {
+      black: '#111111',
+      white: '#ffffff',
+      highlight: '#ec2d5b',
+      dark: '#222222',
+      darker: '#151515',
+      lighter: '#aaaaaa',
+      light: '#eeeeee',
+      grey: '#eeeeee',
+      navy: '#292752',
+      midnight: '#15134f',
+      slate: '#373e51',
+      lightest: '#f7f7f7',
+      mint: '#177e72',
+      transparent: 'transparent',
+    },
+    fontFamily: {
+      sans: ['muli', 'sans-serif'],
+      serif: ['PlayfairDisplay', 'serif'],
+    },
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 }

@@ -1,1 +1,15 @@
-@import 'wrapper';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+@import 'dark-mode';
+@import "custom";
+@import 'global';
+@import 'header';
+@import 'navigation';
+@import 'hero';
+@import 'horizontal-split';
+@import 'legal';

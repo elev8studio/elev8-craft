@@ -1,33 +1,38 @@
 {
-	"extends": ["airbnb/base", "prettier"],
-	"plugins": ["import", "prettier"],
-	"rules": {
-		"consistent-return": "off",
-		"func-names": "off",
-		"global-require": "off",
-		"guard-for-in": "off",
-		"import/extensions": "off",
-		"import/first": "off",
-		"import/newline-after-import": "off",
-		"import/no-extraneous-dependencies": "off",
-		"import/no-unresolved": "off",
-		"import/prefer-default-export": "off",
-		"no-lonely-if": "off",
-		"no-nested-ternary": "off",
-		"no-param-reassign": "warn",
-		"no-shadow": "off",
-		"no-underscore-dangle": "off",
-		"no-unneeded-ternary": "warn",
-		"no-unused-expressions": "warn",
-		"no-unused-vars": ["warn"],
-		"no-useless-escape": "off",
-		"prefer-destructuring": "off",
-		"quotes": ["warn", "single"],
-		"prettier/prettier": ["error"]
-	},
-	"parser": "babel-eslint",
-	"globals": {
-		"window": true,
-		"document": true
-	}
+  "extends": ["airbnb/base", "prettier"],
+  "plugins": ["import", "prettier"],
+  "rules": {
+    "consistent-return": "off",
+    "func-names": "off",
+    "global-require": "off",
+    "guard-for-in": "off",
+    "import/extensions": "off",
+    "import/first": "off",
+    "import/newline-after-import": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "no-lonely-if": "off",
+    "no-nested-ternary": "off",
+    "no-param-reassign": "warn",
+    "no-shadow": "off",
+    "no-underscore-dangle": "off",
+    "no-unneeded-ternary": "warn",
+    "no-unused-expressions": "warn",
+    "no-unused-vars": ["warn"],
+    "no-useless-escape": "off",
+    "prefer-destructuring": "off",
+    "quotes": [
+      "warn",
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": false }
+    ],
+    "prettier/prettier": ["error"]
+  },
+  "parser": "babel-eslint",
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true
+  }
 }

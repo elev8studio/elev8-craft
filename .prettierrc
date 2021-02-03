@@ -1,18 +1,26 @@
 {
-	"tabWidth": 2,
-	"useTabs": true,
-	"semi": false,
-	"singleQuote": true,
-	"trailingComma": "es5",
-	"bracketSpacing": true,
-	"jsxBracketSameLine": true,
-	"arrowParens": "avoid",
-	"plugins": ["./node_modules/prettier-plugin-twig-melody"],
-	"twigMultiTags": [
-		"nav,endnav",
-		"switch,case,default,endswitch",
-		"ifchildren,endifchildren",
-		"cache,endcache",
-		"embed,endembed"
-	]
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": true,
+  "arrowParens": "avoid",
+  "plugins": ["./node_modules/prettier-plugin-twig-melody"],
+  "twigMultiTags": [
+    "nav,endnav",
+    "switch,case,default,endswitch",
+    "ifchildren,endifchildren",
+    "cache,endcache",
+    "embed,endembed"
+  ],
+  "overrides": [
+    {
+      "files": ["*.twig", "*.html"],
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
 }

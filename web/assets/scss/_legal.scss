@@ -5,8 +5,8 @@
 	#iubenda_policy {
 		.simple_pp > ul > li > ul .iconed,
 		.expand-click {
-			background: none;
-			padding-left: 0;
+			//background: none;
+			@apply bg-none pl-0;
 		}
 
 		.expand-click {
@@ -18,51 +18,42 @@
 		}
 
 		.iub_content {
-			p,
-			li {
-				font-family: 'Muli', sans-serif;
-				font-size: $body2;
-				line-height: 2.5rem;
-			}
+			@extend p;
 
 			h1,
 			h2 {
-				display: none;
+                @apply hidden;
 			}
 
 			h3 {
-				font-size: $h3;
-				padding: 1.5rem 0 1rem;
+				@apply h3 pt-6 px-0 pb-4;
 			}
 
 			ul:last-child li ul li h3 {
-				font-size: $body2;
+				@extend p;
 			}
 
 			h4 {
-				font-size: $h4;
+				@apply h4;
 			}
 
 			div,
 			p,
 			h3,
 			h4 {
-				font-family: 'Muli', sans-serif;
-				color: var(--text);
+				@apply font-sans text-black dark:text-white;
 			}
 
 			a {
-				text-decoration: none;
-				color: $highlightSoft;
-				border-bottom: none;
+				@apply no-underline text-highlight border-none;
 			}
 
 			hr {
-				display: none;
+				@apply hidden;
 			}
 
 			.box_primary {
-				background-color: var(--bg-alt);
+				@apply bg-light dark:bg-darker;
 			}
 		}
 	}

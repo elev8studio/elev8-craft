@@ -1,9 +1,9 @@
-<div class="content">
-	<h1 class="form__heading">
-		{{ block.heading }}
-	</h1>
-	<h2 class="form__subheading">
-		{{ block.subheading }}
-	</h2>
-	{% include '_includes/forms/contact' %}
+<div class="relative flex items-center justify-center flex-col pt-20 px-12 pb-32 w-full">
+    <h1 class="inline-block mb-8 pb-0 border-b-2 border-highlight">
+        {{ block.heading }}
+    </h1>
+    <h2 class="pt-12 text-center">
+        {{ block.subheading }}
+    </h2>
+    {% include '_includes/forms/contact' %}
 </div>
