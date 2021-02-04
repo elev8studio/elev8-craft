@@ -17,7 +17,7 @@
   ],
   "overrides": [
     {
-      "files": ["*.twig", "*.html"],
+      "files": ["*.twig", "*.html", "*.scss", "*.css"],
       "options": {
         "tabWidth": 4
       }
