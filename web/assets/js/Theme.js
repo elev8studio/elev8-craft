@@ -49,7 +49,7 @@ const Theme = () => {
       .addEventListener('change', e => {
         setToggle(e.matches)
         setLocalStorage(e.matches)
-        setClass()
+        setClass(e.matches)
       })
   }
 
