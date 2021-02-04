@@ -3,8 +3,10 @@
 
     {% if blocks|length %}
         {% for block in blocks.all() %}
-            <section class="relative flex justify-center {{ block.type.handle|kebab }}"
-                id="{{ entry.type.handle }}-{{ block.type.handle|kebab }}">
+            {% set sectionClass = block.type.handle|kebab %}
+            {% set sectionId = entry.type.handle ~ '-' ~ block.type.handle|kebab ~ '-' ~ loop.index %}
+            <section class="relative flex justify-center {{ sectionClass }}"
+                     id="{{ sectionId }}">
                 {% include '_includes/' ~ (block.type.handle|kebab) %}
             </section>
         {% endfor %}
