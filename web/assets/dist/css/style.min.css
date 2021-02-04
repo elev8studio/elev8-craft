@@ -22825,7 +22825,7 @@ h1, h2, h3, h4, p, .legal #iubenda_policy .iub_content ul:last-child li ul li h3
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(236, 45, 91, var(--tw-text-opacity));
-  letter-spacing: 0em;
+  letter-spacing: 0.025em;
 }
 
 @media only screen and (min-width: 450px) {
@@ -23504,7 +23504,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   scroll-padding-top: 8rem;
 }
 
@@ -23548,7 +23549,7 @@ main section:nth-of-type(2n) {
 
 main section:nth-of-type(2n + 1) {
   --tw-bg-opacity: 1;
-  background-color: rgba(243, 247, 240, var(--tw-bg-opacity));
+  background-color: rgba(238, 238, 238, var(--tw-bg-opacity));
 }
 
 .dark main section:nth-of-type(2n + 1) {
@@ -24019,7 +24020,7 @@ h1, h2, h3, h4, p, .legal #iubenda_policy .iub_content ul:last-child li ul li h3
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(236, 45, 91, var(--tw-text-opacity));
-  letter-spacing: 0em;
+  letter-spacing: 0.025em;
 }
 
 @media only screen and (min-width: 450px) {
@@ -24604,7 +24605,7 @@ a {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(236, 45, 91, var(--tw-text-opacity));
-  letter-spacing: 0em;
+  letter-spacing: 0.025em;
 }
 
 @media only screen and (min-width: 450px) {
@@ -24670,7 +24671,7 @@ a {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(236, 45, 91, var(--tw-text-opacity));
-  letter-spacing: 0em;
+  letter-spacing: 0.025em;
 }
 
 @media only screen and (min-width: 450px) {
@@ -24736,7 +24737,7 @@ a {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(236, 45, 91, var(--tw-text-opacity));
-  letter-spacing: 0em;
+  letter-spacing: 0.025em;
 }
 
 @media only screen and (min-width: 450px) {
@@ -24912,7 +24913,7 @@ h1, h2, h3, h4, p, .legal #iubenda_policy .iub_content ul:last-child li ul li h3
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(236, 45, 91, var(--tw-text-opacity));
-  letter-spacing: 0em;
+  letter-spacing: 0.025em;
 }
 
 @media only screen and (min-width: 450px) {
@@ -25498,7 +25499,7 @@ a {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(236, 45, 91, var(--tw-text-opacity));
-  letter-spacing: 0em;
+  letter-spacing: 0.025em;
 }
 
 @media only screen and (min-width: 450px) {
@@ -25564,7 +25565,7 @@ a {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(236, 45, 91, var(--tw-text-opacity));
-  letter-spacing: 0em;
+  letter-spacing: 0.025em;
 }
 
 @media only screen and (min-width: 450px) {
@@ -25630,7 +25631,7 @@ a {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(236, 45, 91, var(--tw-text-opacity));
-  letter-spacing: 0em;
+  letter-spacing: 0.025em;
 }
 
 @media only screen and (min-width: 450px) {

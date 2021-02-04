@@ -1,38 +1,86 @@
 childBlocks: ''
 field: 95bb7f79-d11f-4e9d-aa81-e64600ff3f53
 fieldLayouts:
-  38d96d72-58b8-4088-be26-0548c388f31f:
+  -
     tabs:
       -
-        fields:
-          1a270472-7b9a-4b1b-b79e-e10cd6fe0461:
+        elements:
+          -
+            fieldUid: e74bdc1e-2c13-4db8-bd47-df4726f13ee7
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          6615c6a9-2999-40bf-8b0f-2aafda51da88:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c9ae56dd-0d2d-48db-9a8e-195679072eaf
+            instructions: null
+            label: null
             required: false
-            sortOrder: 5
-          a0d3b33b-126e-45c3-a3b8-eac104153c6c:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1a270472-7b9a-4b1b-b79e-e10cd6fe0461
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          c9ae56dd-0d2d-48db-9a8e-195679072eaf:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a0d3b33b-126e-45c3-a3b8-eac104153c6c
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          e74bdc1e-2c13-4db8-bd47-df4726f13ee7:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e934635a-7522-4ca2-8fea-8e0eedd5537f
+            instructions: null
+            label: null
             required: false
-            sortOrder: 0
-          e934635a-7522-4ca2-8fea-8e0eedd5537f:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6615c6a9-2999-40bf-8b0f-2aafda51da88
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
       -
-        fields:
-          c66e6c0a-b52a-4675-ad32-e6d88ce12fb1:
+        elements:
+          -
+            fieldUid: c66e6c0a-b52a-4675-ad32-e6d88ce12fb1
+            instructions: null
+            label: null
             required: false
-            sortOrder: 0
-          e3f3af88-6d54-472f-a1f6-52a81a2f443a:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e3f3af88-6d54-472f-a1f6-52a81a2f443a
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Code
         sortOrder: 2
 handle: horizontalSplit

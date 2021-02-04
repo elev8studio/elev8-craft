@@ -1,4 +1,4 @@
-dateModified: 1612313167
+dateModified: 1612475927
 email:
   fromEmail: help@elev8stud.io
   fromName: $SITE_NAME
@@ -28,6 +28,13 @@ plugins:
     schemaVersion: 1.0.0
     settings:
       honeypotParam: form-validate
+  cp-css:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      additionalCss: ''
+      cssFile: ''
   dospaces:
     edition: standard
     enabled: true
@@ -56,35 +63,50 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  seo:
+  seomatic:
     edition: standard
     enabled: true
-    schemaVersion: 3.1.1
+    schemaVersion: 3.0.9
     settings:
-      description: ''
-      facebookAppId: ''
-      metaTemplate: ''
-      removeAlternateUrls: ''
-      robots:
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
-      sitemapLimit: '1000'
-      sitemapName: sitemap
-      socialImage:
-        - '630'
-      title:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
         -
           __assoc__:
-            - '- key - ''2'''
-            - '- locked - ''1'''
-            - '- template - ''{{ siteName }} | {title}'''
-      titleSuffix: null
-      twitterHandle: TheElev8Studio
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '&#x1f6a7;⚙ '
+      devModeTitlePrefix: '&#x1f6a7; '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: live
+      generatorEnabled: true
+      headersEnabled: true
+      lowercaseCanonicalUrl: '1'
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 'null'
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - linkedin
+        - slack
+      siteGroupsSeparate: '1'
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
   sprout-encode-email:
     edition: standard
     enabled: true

@@ -1,84 +1,99 @@
 @import 'mixins';
 @import 'variables';
 
-h1, h2, h3, h4, p, i, a, li, td {
-    @apply m-0 py-2 px-0;
+h1,
+h2,
+h3,
+h4,
+p,
+i,
+a,
+li,
+td {
+  @apply m-0 py-2 px-0;
 }
 
-.h1, h1 {
-    @include calc-fluid(font-size, 3rem, 4rem);
-    @include calc-fluid(line-height, 4rem, 5rem);
+.h1,
+h1 {
+  @include calc-fluid(font-size, 3rem, 4rem);
+  @include calc-fluid(line-height, 4rem, 5rem);
 
-    @apply font-bold tracking-wide dark:text-white;
+  @apply font-bold tracking-wide dark:text-white;
 }
 
-.h2, h2 {
-    @include calc-fluid(font-size, 2.5rem, 3rem);
-    @include calc-fluid(line-height, 3.5rem, 4rem);
+.h2,
+h2 {
+  @include calc-fluid(font-size, 2.5rem, 3rem);
+  @include calc-fluid(line-height, 3.5rem, 4rem);
 
-    @apply font-bold tracking-wide dark:text-white;
+  @apply font-bold tracking-wide dark:text-white;
 }
 
-.h3, h3 {
-    @include calc-fluid(font-size, 2rem, 2.5rem);
-    @include calc-fluid(line-height, 3rem, 3.5rem);
+.h3,
+h3 {
+  @include calc-fluid(font-size, 2rem, 2.5rem);
+  @include calc-fluid(line-height, 3rem, 3.5rem);
 
-    @apply font-bold text-highlight tracking-normal;
+  @apply font-bold text-highlight tracking-wide;
 }
 
-.h4, h4 {
-    @include calc-fluid(font-size, 1.8rem, 2.3rem);
-    @include calc-fluid(line-height, 2.8rem, 3.3rem);
+.h4,
+h4 {
+  @include calc-fluid(font-size, 1.8rem, 2.3rem);
+  @include calc-fluid(line-height, 2.8rem, 3.3rem);
 
-    @apply font-semibold dark:text-highlight tracking-wide;
-}
-
-i.icon {
-    font-size: 3rem;
-}
-
-.h3, h3 {
-    @include calc-fluid(font-size, 2rem, 2.5rem);
-    @include calc-fluid(line-height, 3rem, 3.5rem);
-
-    @apply font-semibold text-highlight tracking-normal;
-}
-
-.h4, h4 {
-    @include calc-fluid(font-size, 1.8rem, 2.3rem);
-    @include calc-fluid(line-height, 2.8rem, 3.3rem);
-
-    @apply font-medium dark:text-highlight tracking-normal;
+  @apply font-semibold dark:text-highlight tracking-wide;
 }
 
 i.icon {
-    font-size: 3rem;
-
-
-    @apply block p-4 text-center text-white hover:text-highlight ease-in-out duration-300;
+  font-size: 3rem;
 }
 
-.body, p, li {
-    @include calc-fluid(font-size, 1.8rem, 2.3rem);
-    @include calc-fluid(line-height, 2.8rem, 3.3rem);
+.h3,
+h3 {
+  @include calc-fluid(font-size, 2rem, 2.5rem);
+  @include calc-fluid(line-height, 3rem, 3.5rem);
 
-    @apply font-medium dark:text-white;
+  @apply font-semibold text-highlight tracking-normal;
+}
+
+.h4,
+h4 {
+  @include calc-fluid(font-size, 1.8rem, 2.3rem);
+  @include calc-fluid(line-height, 2.8rem, 3.3rem);
+
+  @apply font-medium dark:text-highlight tracking-normal;
+}
+
+i.icon {
+  font-size: 3rem;
+
+  @apply block p-4 text-center text-white hover:text-highlight ease-in-out duration-300;
+}
+
+.body,
+p,
+li {
+  @include calc-fluid(font-size, 1.8rem, 2.3rem);
+  @include calc-fluid(line-height, 2.8rem, 3.3rem);
+
+  @apply font-medium dark:text-white;
 }
 
 .button {
-    @include calc-fluid(font-size, 2rem, 2.5rem);
+  @include calc-fluid(font-size, 2rem, 2.5rem);
 
-    @apply py-6 px-12 cursor-pointer ease-in-out duration-300 bg-highlight border-2 border-highlight uppercase tracking-wider text-white hover:bg-opacity-80;
+  @apply py-6 px-12 cursor-pointer ease-in-out duration-300 bg-highlight border-2 border-highlight uppercase tracking-wider text-white hover:bg-opacity-80;
 }
 
 .caption {
-    @include calc-fluid(font-size, 1.2rem, 1.7rem);
+  @include calc-fluid(font-size, 1.2rem, 1.7rem);
 }
 
 a {
-    @apply text-black dark:text-white hover:text-highlight ease-in-out duration-300;
+  @apply text-black dark:text-white hover:text-highlight ease-in-out duration-300;
 }
 
 .input {
-    @apply h4 block mt-4 mx-0 mb-8 p-4 border-0 border-b-2 outline-none leading-10 w-full transition-all duration-300 rounded-none focus:border-highlight border-highlight border-opacity-40 bg-white dark:bg-grey;
+  @apply h4 block mt-4 mx-0 mb-8 p-4 border-0 border-b-2 outline-none leading-10 w-full transition-all duration-300 rounded-none focus:border-highlight border-highlight border-opacity-40 bg-white dark:bg-grey;
 }

@@ -3,7 +3,7 @@ fieldGroup: 62b76306-9f87-4885-af7d-16855c915296
 handle: heading
 instructions: ''
 name: Heading
-searchable: false
+searchable: true
 settings:
   byteLimit: null
   charLimit: null

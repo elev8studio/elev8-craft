@@ -2,15 +2,12 @@
 <html lang="{{ craft.app.language }}" class="overscroll-none overflow-x-hidden">
     {% import '_helpers/macros' as macros %}
 
-    {% set seo = getSeoField() %}
-
     {% include '_globals/head' %}
 
     <body id="body"
         class="elev8 font-sans font-normal relative overflow-none m-auto tracking-wide min-h-screen {{ entry.bodyClass|default(
             ''
         ) }}">
-        {% include '_globals/google-body-script' %}
 
         {% include '_globals/header' %}
 
